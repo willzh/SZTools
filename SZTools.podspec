@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SZTools'
-  s.version          = '1.0.3'
+  s.version          = '1.0.0'
   s.summary          = 'Swift 常用方法整理.'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
+  s.swift_version = '4.0'
   s.source_files = 'SZTools/Classes/**/*'
   
   # s.resource_bundles = {
