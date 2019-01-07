@@ -1,0 +1,16 @@
+PODS:
+  - SZTools (0.1.0)
+
+DEPENDENCIES:
+  - SZTools (from `../`)
+
+EXTERNAL SOURCES:
+  SZTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SZTools: 49ce4741d04f98184e3ca49d28f7bea665fa0f2a
+
+PODFILE CHECKSUM: 7b5d442ae1982ab56bac29b5e6220b62a0ee701f
+
+COCOAPODS: 1.5.3
