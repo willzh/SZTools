@@ -12,19 +12,19 @@ import Foundation
 extension NotificationCenter {
     
     
-    class func post(_ name: String, object: Any? = nil, info: [AnyHashable : Any]? = nil) {
+    public class func post(_ name: String, object: Any? = nil, info: [AnyHashable : Any]? = nil) {
         NotificationCenter.default.post(name: NSNotification.Name(name), object: object, userInfo: info)
     }
     
-    class func listen(_ observer: Any, sel: Selector, name: String) {
+    public class func listen(_ observer: Any, sel: Selector, name: String) {
         NotificationCenter.default.addObserver(observer, selector: sel, name: NSNotification.Name(name), object: nil)
     }
     
-    class func removeAll(_ observer: Any) {
+    public class func removeAll(_ observer: Any) {
         NotificationCenter.default.removeObserver(observer)
     }
     
-    class func remove(_ observer: Any, _ name: String) {
+    public class func remove(_ observer: Any, _ name: String) {
         NotificationCenter.default.removeObserver(observer, name: NSNotification.Name(name), object: nil)
     }
     

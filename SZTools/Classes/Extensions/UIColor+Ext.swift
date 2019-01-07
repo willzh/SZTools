@@ -13,7 +13,7 @@ import UIKit
 
 extension UIColor {
     
-    convenience init(red: Int, green: Int, blue: Int) {
+    public convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
@@ -23,20 +23,20 @@ extension UIColor {
     
     
     /// 以 16 进制方式创建 UIColor，全局方法
-    class func hexColorWithAlpha(_ hex: Int, _ alpha: CGFloat = 1.0) -> UIColor {
+    public class func hexColorWithAlpha(_ hex: Int, _ alpha: CGFloat = 1.0) -> UIColor {
         return UIColor(red: (hex >> 16) & 0xFF, green: (hex >> 8) & 0xFF, blue: hex & 0xFF).withAlphaComponent(alpha)
     }
     
     /// 返回16进制字符串
-    func hexString() -> String {
+    public func hexString() -> String {
         return hexStringWithAlpha(false)
     }
     
-    func hexStringWithAlpha() -> String {
+    public func hexStringWithAlpha() -> String {
         return hexStringWithAlpha(true)
     }
     
-    func hexStringWithAlpha(_ withAlpha: Bool) -> String {
+    public func hexStringWithAlpha(_ withAlpha: Bool) -> String {
         let count = cgColor.numberOfComponents
         let components = cgColor.components
         let stringFormat = "%02x%02x%02x"

@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias Task = (_ cancle : Bool) -> Void
+public typealias Task = (_ cancle : Bool) -> Void
 
 
 extension DispatchQueue {
@@ -16,7 +16,7 @@ extension DispatchQueue {
     
     /// 延迟执行，返回一个 Task，可以取消延迟任务
     @discardableResult
-    func delay(_ time: TimeInterval, task: @escaping() -> ()) -> Task? {
+    public func delay(_ time: TimeInterval, task: @escaping() -> ()) -> Task? {
         
         func dispatch_later(block: @escaping() -> ()) {
             let t = DispatchTime.now() + time
@@ -48,7 +48,7 @@ extension DispatchQueue {
     }
     
     /// 取消延迟任务
-    func cancle(_ task: Task?) {
+    public func cancle(_ task: Task?) {
         task?(true)
     }
     

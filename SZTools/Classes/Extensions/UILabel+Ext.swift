@@ -13,7 +13,7 @@ extension UILabel {
     
     
     /// 创建一个 label
-    class func create(font: UIFont, color: UIColor, text: String, frame: CGRect, alignment: NSTextAlignment = .left) -> UILabel {
+    public class func create(font: UIFont, color: UIColor, text: String, frame: CGRect, alignment: NSTextAlignment = .left) -> UILabel {
         let label = UILabel(frame: frame)
         label.font = font
         label.textColor = color

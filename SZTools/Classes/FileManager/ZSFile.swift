@@ -14,26 +14,26 @@ class ZSFile: NSObject {
 
     //MARK: - 参数
     /// 是否被选中，cell 操作参数，非文件属性
-    var selected: Bool = false
+    public var selected: Bool = false
     
     /// 文件的路径
-    var path: String?
+    public var path: String?
     /// 是否文件夹
-    var isDir: Bool = false
+    public var isDir: Bool = false
     /// 文件夹中的文件数量
-    var numberOfFiles: Int = 0
+    public var numberOfFiles: Int = 0
     /// 创建日期
-    var createDate: Date?
+    public var createDate: Date?
     /// 更新日期
-    var modifyDate: Date?
+    public var modifyDate: Date?
     /// 文件大小
-    var fileSize: Int64 = 0
+    public var fileSize: Int64 = 0
     
     
     
     
     //MARK: - init
-    init(path: String) {
+    public init(path: String) {
         super.init()
         
         self.path = path

@@ -13,7 +13,7 @@ extension String {
     
     
     ///根据字体和范围size计算字符串的 size
-    func size(_ font: UIFont, inSize: CGSize) -> CGSize {
+    public func size(_ font: UIFont, inSize: CGSize) -> CGSize {
         
         let style = NSMutableParagraphStyle()
         style.lineBreakMode = .byWordWrapping
@@ -24,7 +24,7 @@ extension String {
     }
     
     /// 截取字符串
-    func subString(withRange range: NSRange?) -> String? {
+    public func subString(withRange range: NSRange?) -> String? {
         if range == nil {
             return nil
         }

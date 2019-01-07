@@ -13,21 +13,22 @@ import UIKit
 extension UIView {
     
     //MARK: - frame
-    func setMinX(_ minx: CGFloat) {
+    /// set origin x
+    public func setMinX(_ minx: CGFloat) {
         
         var sf = self.frame
         sf.origin.x = minx
         self.frame = sf
     }
     
-    func setMinY(_ miny: CGFloat) {
+    public func setMinY(_ miny: CGFloat) {
         
         var sf = self.frame
         sf.origin.y = miny
         self.frame = sf
     }
     
-    func setOrigin(_ x: CGFloat, _ y: CGFloat) {
+    public func setOrigin(_ x: CGFloat, _ y: CGFloat) {
         
         var sf = self.frame
         sf.origin.x = x
@@ -35,21 +36,21 @@ extension UIView {
         self.frame = sf
     }
     
-    func setWidth(_ width: CGFloat) {
+    public func setWidth(_ width: CGFloat) {
         
         var sf = self.frame
         sf.size.width = width
         self.frame = sf
     }
     
-    func setHeight(_ height: CGFloat) {
+    public func setHeight(_ height: CGFloat) {
         
         var sf = self.frame
         sf.size.height = height
         self.frame = sf
     }
     
-    func setSize(_ width: CGFloat, _ height: CGFloat) {
+    public func setSize(_ width: CGFloat, _ height: CGFloat) {
         
         var sf = self.frame
         sf.size.width = width
@@ -59,7 +60,7 @@ extension UIView {
     
     
     //MARK: - create
-    class func create(_ frame: CGRect, backgroundColor: UIColor = .white) -> UIView {
+    public class func create(_ frame: CGRect, backgroundColor: UIColor = .white) -> UIView {
         let tv = UIView(frame: frame)
         tv.backgroundColor = backgroundColor
         

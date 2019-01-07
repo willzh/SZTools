@@ -1,8 +1,8 @@
 {
   "name": "SZTools",
-  "version": "0.1.0",
-  "summary": "A short description of SZTools.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.1",
+  "summary": "Swift 常用方法整理.",
+  "description": "自己项目中 swift 常用的方法整理",
   "homepage": "https://github.com/willzh/SZTools",
   "license": {
     "type": "MIT",
@@ -13,10 +13,11 @@
   },
   "source": {
     "git": "https://github.com/willzh/SZTools.git",
-    "tag": "0.1.0"
+    "tag": "1.0.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
+  "swift_version": "4.0",
   "source_files": "SZTools/Classes/**/*"
 }

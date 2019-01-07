@@ -15,7 +15,7 @@ extension UIViewController {
     ///
     /// - Parameter sbname: storyboard 名称
     /// - Returns: UIViewController 实例
-    class func loadFromSB(_ sbname: String) -> UIViewController {
+    public class func loadFromSB(_ sbname: String) -> UIViewController {
         let sb = UIStoryboard.init(name: sbname, bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: NSStringFromClass(self).components(separatedBy: ".").last!)
         
@@ -23,12 +23,12 @@ extension UIViewController {
     }
     
     /// 返回指定的 storyboard 名称，由具体的类中实现
-    @objc class func storyboardName() -> String? {
+    @objc public class func storyboardName() -> String? {
         return nil
     }
     
     /// 实例化一个类，如果类中有返回 storyboardName，会从指定的 storyboard 中加载，没有则调用默认的 init
-    class func zs_instance() -> UIViewController {
+    public class func zs_instance() -> UIViewController {
         let sbName = storyboardName()
         if sbName == nil {
             return self.init()

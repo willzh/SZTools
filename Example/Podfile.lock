@@ -1,5 +1,5 @@
 PODS:
-  - SZTools (0.1.0)
+  - SZTools (1.0.1)
 
 DEPENDENCIES:
   - SZTools (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SZTools: 49ce4741d04f98184e3ca49d28f7bea665fa0f2a
+  SZTools: 68f8abf7000b7179588649172c02989aec935031
 
 PODFILE CHECKSUM: 7b5d442ae1982ab56bac29b5e6220b62a0ee701f
 

@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Documents 路径
-func path_documents() -> String {
+public func path_documents() -> String {
     let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
     if paths.count > 0 {
         return paths.last!
@@ -19,7 +19,7 @@ func path_documents() -> String {
 }
 
 /// Library 路径
-func path_library() -> String {
+public func path_library() -> String {
     let paths = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)
     if paths.count > 0 {
         return paths.last!
@@ -28,7 +28,7 @@ func path_library() -> String {
 }
 
 /// Caches 路径
-func path_cache() -> String {
+public func path_cache() -> String {
     let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)
     if paths.count > 0 {
         return paths.last!
@@ -37,12 +37,12 @@ func path_cache() -> String {
 }
 
 /// tmp 路径
-func path_tmp() -> String {
+public func path_tmp() -> String {
     return NSTemporaryDirectory()
 }
 
 /// 返回一个隐藏文件夹的路径。dirName：文件夹名称。inDir：上一级文件夹路径
-func hiddenDirectory(dirName: String, inDir: String) -> String {
+public func hiddenDirectory(dirName: String, inDir: String) -> String {
     return inDir + "/." + dirName
 }
 

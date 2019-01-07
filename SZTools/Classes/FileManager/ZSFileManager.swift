@@ -18,7 +18,7 @@ class ZSFileManager: NSObject {
         
     }
     
-    class func isDir(_ dirPath: String) -> Bool {
+    public class func isDir(_ dirPath: String) -> Bool {
         var isDirectory: ObjCBool = true
         if FileManager.default.fileExists(atPath: dirPath, isDirectory: &isDirectory) {
             return true
@@ -28,7 +28,7 @@ class ZSFileManager: NSObject {
     
     
     /// 删除一组文件
-    class func deleteFiles(atPaths: [String]?) {
+    public class func deleteFiles(atPaths: [String]?) {
         guard let paths = atPaths else {
             return
         }
@@ -42,7 +42,7 @@ class ZSFileManager: NSObject {
     }
     
     /// 删除一组文件
-    class func deleteFiles(files: [ZSFile]?) {
+    public class func deleteFiles(files: [ZSFile]?) {
         guard let models = files else {
             return
         }
@@ -59,7 +59,7 @@ class ZSFileManager: NSObject {
     }
     
     /// 重命名文件
-    class func rename(file: ZSFile, newName: String) {
+    public class func rename(file: ZSFile, newName: String) {
         guard let path = file.path else {
             return
         }

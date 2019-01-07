@@ -25,7 +25,7 @@ class ZSFileSearcher: NSObject {
     
     
     /// 获取文件夹中的文件
-    class func contents(OfDir dirPath: String, sortType: ZSFileSortType = .fileName, ascending: Bool = true, skipHiddenFiles: Bool = true) -> [ZSFile]? {
+    public class func contents(OfDir dirPath: String, sortType: ZSFileSortType = .fileName, ascending: Bool = true, skipHiddenFiles: Bool = true) -> [ZSFile]? {
         if !ZSFileManager.isDir(dirPath) {
             return nil
         }
@@ -71,7 +71,7 @@ class ZSFileSearcher: NSObject {
     }
     
     // 获取指定路径下的所有文件夹
-    class func folders(OfDir dirPath: String, sortType: ZSFileSortType = .fileName, ascending: Bool = true, skipHiddenFiles: Bool = true) -> [ZSFile]? {
+    public class func folders(OfDir dirPath: String, sortType: ZSFileSortType = .fileName, ascending: Bool = true, skipHiddenFiles: Bool = true) -> [ZSFile]? {
         if !ZSFileManager.isDir(dirPath) {
             return nil
         }
@@ -121,5 +121,5 @@ class ZSFileSearcher: NSObject {
     
     
     
-
+    
 }
