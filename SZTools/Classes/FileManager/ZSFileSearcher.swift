@@ -12,7 +12,7 @@ import Foundation
 
 
 
-enum ZSFileSortType: Int {
+public enum ZSFileSortType: Int {
     case unsort        // 不排序，搜索出来是什么样就是什么样
     case creationDate
     case modifyDate
@@ -21,7 +21,7 @@ enum ZSFileSortType: Int {
 }
 
 
-class ZSFileSearcher: NSObject {
+public class ZSFileSearcher: NSObject {
     
     
     /// 获取文件夹中的文件
@@ -70,7 +70,7 @@ class ZSFileSearcher: NSObject {
         return fileMods
     }
     
-    // 获取指定路径下的所有文件夹
+    /// 获取指定路径下的所有文件夹
     public class func folders(OfDir dirPath: String, sortType: ZSFileSortType = .fileName, ascending: Bool = true, skipHiddenFiles: Bool = true) -> [ZSFile]? {
         if !ZSFileManager.isDir(dirPath) {
             return nil

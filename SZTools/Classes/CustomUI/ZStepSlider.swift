@@ -9,49 +9,50 @@
 
 import UIKit
 
-class ZStepSlider: UIControl {
+/// 步进式 slider ---.---.---.---.---
+public class ZStepSlider: UIControl {
 
     /// 最大值
-    var maxCount: UInt = 0
+    public var maxCount: UInt = 0
     
     /// 当前选中的索引
-    var index: UInt = 0 {
+    public var index: UInt = 0 {
         didSet {
             
         }
     }
     
     /// 滑动条的高度
-    var trackHeight: CGFloat = 2.0
+    public var trackHeight: CGFloat = 2.0
     
     /// 已滑动过的部分颜色
-    var trackColor: UIColor = .blue
+    public var trackColor: UIColor = .blue
     
     /// 已滑动过部分点的颜色
-    var trackDotColor: UIColor = .white
+    public var trackDotColor: UIColor = .white
     
     /// 未滑到的部分的颜色
-    var sliderColor: UIColor = .lightGray
+    public var sliderColor: UIColor = .lightGray
     
     /// 已滑动过部分点的图片
-    var trackDotImage: UIImage?
+    public var trackDotImage: UIImage?
     
     /// 滑块的颜色
-    var thumbDotColor: UIColor = .lightGray
+    public var thumbDotColor: UIColor = .lightGray
     
     /// 滑块的图片
-    var thumbDotImage: UIImage?
+    public var thumbDotImage: UIImage?
     
     /// 分割点是否可以点击
-    var dotIsUserInteractionEnabled = true
+    public var dotIsUserInteractionEnabled = true
     
     /// 开始点击的位置
-    var startTouchPosition: CGPoint?
+    public var startTouchPosition: CGPoint?
     
     /// 开始点击时，滑块的位置
-    var startThumbPosition: CGPoint?
+    public var startThumbPosition: CGPoint?
     
-    lazy var thumbLayer: CAShapeLayer = {
+    public lazy var thumbLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.contentsScale = UIScreen.main.scale
         
@@ -70,7 +71,7 @@ class ZStepSlider: UIControl {
     
     
     //MARK: - init
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         backgroundColor = .clear
@@ -86,7 +87,7 @@ class ZStepSlider: UIControl {
     
     
     //MARK: -
-    func setIndex(_ index: UInt, animated: Bool) {
+    public func setIndex(_ index: UInt, animated: Bool) {
         
         // 点之间的间隔长度
         let len = frame.width / CGFloat(maxCount - 1)
@@ -100,7 +101,7 @@ class ZStepSlider: UIControl {
     
     
     //MARK: -
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         
         // 背景
         let sliderFrame = Rect(trackHeight / 2.0, (rect.height - trackHeight) / 2.0, rect.width - trackHeight, trackHeight)
@@ -153,7 +154,7 @@ class ZStepSlider: UIControl {
     
     
     //MARK: -  Tracking
-    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    override public func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         startTouchPosition = touch.location(in: self)
         startThumbPosition = thumbLayer.position
         
@@ -193,7 +194,7 @@ class ZStepSlider: UIControl {
         return false
     }
     
-    override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    override public func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         
         var posX = startThumbPosition!.x - (startTouchPosition!.x - touch.location(in: self).x)
         
@@ -209,11 +210,11 @@ class ZStepSlider: UIControl {
         return true
     }
     
-    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+    override public func endTracking(_ touch: UITouch?, with event: UIEvent?) {
         endTouches()
     }
     
-    override func cancelTracking(with event: UIEvent?) {
+    override public func cancelTracking(with event: UIEvent?) {
         endTouches()
     }
     

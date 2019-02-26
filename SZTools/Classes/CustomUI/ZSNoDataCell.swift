@@ -9,14 +9,14 @@
 import UIKit
 
 
-class ZSNoDataTableCell: UITableViewCell {
+public class ZSNoDataTableCell: UITableViewCell {
     
-    @IBOutlet var imgv_cover: UIImageView?
-    @IBOutlet var label_title: UILabel?
-    @IBOutlet var layout_y: NSLayoutConstraint?
+    @IBOutlet public var imgv_cover: UIImageView?
+    @IBOutlet public var label_title: UILabel?
+    @IBOutlet public var layout_y: NSLayoutConstraint?
     
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
         layout_y?.constant -= ZS_StatusAndNavBarHeight
@@ -24,15 +24,15 @@ class ZSNoDataTableCell: UITableViewCell {
     
 }
 
-class ZSNoDataCollectionCell: UICollectionViewCell {
+public class ZSNoDataCollectionCell: UICollectionViewCell {
     
-    @IBOutlet var imgv_cover: UIImageView?
-    @IBOutlet var label_title: UILabel?
-    @IBOutlet var layout_y: NSLayoutConstraint?
-    @IBOutlet var btn_action: UIButton?
+    @IBOutlet public var imgv_cover: UIImageView?
+    @IBOutlet public var label_title: UILabel?
+    @IBOutlet public var layout_y: NSLayoutConstraint?
+    @IBOutlet public var btn_action: UIButton?
     
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
         layout_y?.constant -= ZS_StatusAndNavBarHeight

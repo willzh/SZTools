@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SZTools'
-  s.version          = '1.0.1'
+  s.version          = '1.0.3'
   s.summary          = 'Swift 常用方法整理.'
 
 # This description is used to generate tags and improve search results.
@@ -31,6 +31,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.swift_version = '4.0'
+  
+  #文件源。所有文件
   s.source_files = 'SZTools/Classes/**/*'
   
   # s.resource_bundles = {
@@ -39,5 +41,32 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # s.dependency 'AFNetworking', '~> 2.3'  #依赖库
+  
+  
+  #子目录 扩展和附加方法
+  s.subspec 'Extensions' do |ext|
+      ext.source_files = 'SZTools/Classes/Extensions/**/*'
+  end
+  
+  #子目录 常用宏和方法
+  s.subspec 'Manager' do |man|
+      man.source_files = 'SZTools/Classes/Manager/**/*'
+  end
+  
+  #子目录 文件管理
+  s.subspec 'FileManager' do |fm|
+      fm.source_files = 'SZTools/Classes/FileManager/**/*'
+      fm.dependency 'SZTools/Extensions'
+  end
+  
+  #子目录 自定义UI
+  s.subspec 'CustomUI' do |cus|
+      cus.source_files = 'SZTools/Classes/CustomUI/**/*'
+      cus.dependency 'SZTools/Extensions'
+      cus.dependency 'SZTools/Manager'
+  end
+  
+  
+  
 end

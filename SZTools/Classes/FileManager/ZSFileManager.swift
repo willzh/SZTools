@@ -8,15 +8,7 @@
 
 import UIKit
 
-class ZSFileManager: NSObject {
-
-    
-    
-    func sdfk() {
-        let file = ZSFile(path: "")
-        print("file.path:%@", file.path!)
-        
-    }
+public class ZSFileManager: NSObject {
     
     public class func isDir(_ dirPath: String) -> Bool {
         var isDirectory: ObjCBool = true

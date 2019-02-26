@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'SZTools_Example' do
-    #pod 'SZTools', :path => '../'
-  pod 'SZTools/FileManager', :path => '../'
+    pod 'SZTools', :path => '../'
+    #pod 'SZTools/FileManager', :path => '../'
 
 end

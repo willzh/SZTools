@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ZSFile: NSObject {
+public class ZSFile: NSObject {
 
     //MARK: - 参数
     /// 是否被选中，cell 操作参数，非文件属性

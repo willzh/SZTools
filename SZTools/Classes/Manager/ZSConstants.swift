@@ -29,9 +29,13 @@ public func iPhoneX () -> Bool {
     return screenHeight() == 812
 }
 
-public let ZS_StatusAndNavBarHeight: CGFloat = iPhoneX() ? 88 : 64  /// 状态栏和导航条总共高度
+/// 状态栏和导航条总共高度. x 系列手机等于 88，其他等于 64
+public let ZS_StatusAndNavBarHeight: CGFloat = iPhoneX() ? 88 : 64
+/// 状态栏高度。 x 系列手机等于 44，其他等于 20
 public let ZS_StatusBarHeight: CGFloat = iPhoneX() ? 44 : 20
+/// 顶部安全区域高度。 x 系列手机等于 24，其他等于 0
 public let ZS_SafeAreaTop: CGFloat = iPhoneX() ? 24 : 0
+/// 底部安全区域高度. x 系列手机等于 34，其他等于 0
 public let ZS_SafeAreaBottom: CGFloat = iPhoneX() ? 34 : 0
 
 
