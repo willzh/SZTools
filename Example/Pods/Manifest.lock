@@ -1,16 +1,16 @@
 PODS:
-  - SZTools (1.0.1)
+  - SZTools/FileManager (1.0.2)
 
 DEPENDENCIES:
-  - SZTools (from `../`)
+  - SZTools/FileManager (from `../`)
 
 EXTERNAL SOURCES:
   SZTools:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SZTools: 68f8abf7000b7179588649172c02989aec935031
+  SZTools: 7fff74b966b02f2088d82026576082cfd7c99294
 
-PODFILE CHECKSUM: 7b5d442ae1982ab56bac29b5e6220b62a0ee701f
+PODFILE CHECKSUM: c0d507012a0b6a7c09259dda99654c27ff1054ea
 
 COCOAPODS: 1.5.3
