@@ -23,5 +23,16 @@ extension UILabel {
         return label
     }
     
+    /// 计算 label 中文字 size
+    public func textSize() -> CGSize {
+        
+        let style = NSMutableParagraphStyle()
+        style.lineBreakMode = .byWordWrapping
+        
+        let attributes = [NSAttributedString.Key.font: self.font!, NSAttributedString.Key.paragraphStyle: style]
+        let nsstr =  self.text! as NSString
+        return nsstr.boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: attributes, context: nil).size
+    }
+    
     
 }

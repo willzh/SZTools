@@ -85,3 +85,6 @@ public func Localized(_ key: String) -> String {
 }
 
 
+//MARK: - 常用 Block
+/// 空参数的回调 block
+public typealias VoidBlock = () -> Void

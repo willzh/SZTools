@@ -20,17 +20,16 @@
 		89F2ADAA049A8C93EC17FE6EAE0FA516 /* Pods-SZTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD1512602108935F45F4307F4E3D77F /* Pods-SZTools_Example-dummy.m */; };
 		8BC38DD211DC903530C1D6FF8B1B7BA4 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FA315A4C738EF90122A36BD8508D04 /* UILabel+Ext.swift */; };
 		93255BCD4A4322FA9CAD34D838408180 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D3BA9E409BBE69EB0101431179D9B8 /* Date+Formatted.swift */; };
-		938BD1575EBDC472E61C97D1BB804316 /* ZSNoDataTableCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3B373F9D000FB096B7E55F28BD6FC87D /* ZSNoDataTableCell.xib */; };
 		96DC25EB18CD25FF7A0D826AC08BE5A1 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF58CD0C16492D641FA37024999957 /* UICollectionView+Ext.swift */; };
 		9BD825C815E447AC2DCE5B43E5E6DCD2 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A8BEE967339EF2BE3BFB9B10D174A /* UIColor+Ext.swift */; };
-		9C324B6A85D56DD0DBDC66EA09814B0F /* ZSNoDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E707B19362AAACFA32E5FF8841505 /* ZSNoDataCell.swift */; };
 		9CE64738648F52E1B0FCE37F730BE80C /* ZSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314A0BACA3A62611905B5539170D621C /* ZSConstants.swift */; };
 		A19881943E1F425B3680907A665AB3DF /* ZSFileSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B11A7EF9733BA31415B5921EE9DA51 /* ZSFileSearcher.swift */; };
 		A9FC2F4C73576455E5472BFCA412F87A /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586C24B3282AB4B832DC60E6DC68233 /* UIButton+Ext.swift */; };
 		B871AB3AEE412B6D598813F09E1A94C4 /* ZStepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C54B3040E7491F4A681D17AAC6601 /* ZStepSlider.swift */; };
+		BE81D0D72243E8060065322D /* Device+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81D0D62243E8060065322D /* Device+Ext.swift */; };
+		BE81D0D92243EC1A0065322D /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81D0D82243EC190065322D /* UIView+Nib.swift */; };
 		C2ABB7075654D7B2F8D633E91FD1D01D /* SZTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 140EFCFF4F22E1B1D7396A2663DB57FE /* SZTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C66000EE26E3EFA26F0F9BE1B13BFBEB /* DispathcQueue+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D787867DE0041829D8AA08BF857AC9A /* DispathcQueue+Delay.swift */; };
-		C7DBC2C460D721177F1B34622828EFB2 /* ZSNoDataCollectionCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4B09ACD4C8CC0151672AB614ABB00DE7 /* ZSNoDataCollectionCell.xib */; };
 		D9399A141B83EE912A5AC17F0F405E70 /* ZSFilePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D558ECBFDD08C89F177913773605AB /* ZSFilePaths.swift */; };
 		DE8A0B7E3854A665C5260E13853F6B1C /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCEFBFEF6DCE680F87866339207016 /* UITableView+Ext.swift */; };
 		E497F40C513304670A1E3F28D87ABD4D /* CGRect+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413B93376C25D0FA87865D2EA4C1DCD /* CGRect+Ext.swift */; };
@@ -49,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0039605D957C206F97FB323B367B996C /* SZTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SZTools.framework; path = SZTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0039605D957C206F97FB323B367B996C /* SZTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SZTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C681F1AF81ED1D85FFBE547F8F02D35 /* Pods-SZTools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SZTools_Example-umbrella.h"; sourceTree = "<group>"; };
 		1289A6F954A7EB7760051E6AE25AE30C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		140EFCFF4F22E1B1D7396A2663DB57FE /* SZTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SZTools-umbrella.h"; sourceTree = "<group>"; };
@@ -59,9 +58,7 @@
 		2D787867DE0041829D8AA08BF857AC9A /* DispathcQueue+Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "DispathcQueue+Delay.swift"; sourceTree = "<group>"; };
 		314A0BACA3A62611905B5539170D621C /* ZSConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSConstants.swift; sourceTree = "<group>"; };
 		3722C78B15088173DF867EA4A15859CC /* SZTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SZTools-prefix.pch"; sourceTree = "<group>"; };
-		3B373F9D000FB096B7E55F28BD6FC87D /* ZSNoDataTableCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ZSNoDataTableCell.xib; sourceTree = "<group>"; };
-		4B09ACD4C8CC0151672AB614ABB00DE7 /* ZSNoDataCollectionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ZSNoDataCollectionCell.xib; sourceTree = "<group>"; };
-		4C838FF5C6E5D18AAAC60882179A43C2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4C838FF5C6E5D18AAAC60882179A43C2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		52962CB2B558AAE12083152293E4F711 /* Pods-SZTools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SZTools_Example-frameworks.sh"; sourceTree = "<group>"; };
 		59D3BA9E409BBE69EB0101431179D9B8 /* Date+Formatted.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
 		6413B93376C25D0FA87865D2EA4C1DCD /* CGRect+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Ext.swift"; sourceTree = "<group>"; };
@@ -71,17 +68,18 @@
 		6DF8851657D96B2878892EC45EA3E54E /* SZTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SZTools.xcconfig; sourceTree = "<group>"; };
 		6E34C9D3E6043BE9E80E922810466778 /* Pods-SZTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SZTools_Example.modulemap"; sourceTree = "<group>"; };
 		72B11A7EF9733BA31415B5921EE9DA51 /* ZSFileSearcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSFileSearcher.swift; sourceTree = "<group>"; };
-		7541C7AFD2A7D85174ABCFBD94904C68 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		755E707B19362AAACFA32E5FF8841505 /* ZSNoDataCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSNoDataCell.swift; sourceTree = "<group>"; };
+		7541C7AFD2A7D85174ABCFBD94904C68 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		798E2DE50990295E23FBE78014DE20A8 /* Pods-SZTools_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SZTools_Example-resources.sh"; sourceTree = "<group>"; };
 		8785A21548F99CA9F1DC39CDA547C080 /* String+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		91FA315A4C738EF90122A36BD8508D04 /* UILabel+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
-		92F7C061BE4E5A73E7CB4BC8CF3E10EB /* SZTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SZTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		92F7C061BE4E5A73E7CB4BC8CF3E10EB /* SZTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SZTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94323EBD8E4B58019A3AFCBF9B4EE0A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9586C24B3282AB4B832DC60E6DC68233 /* UIButton+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		AE43D6423F688178A59E622CEF3061EB /* SZTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SZTools-dummy.m"; sourceTree = "<group>"; };
 		B5953F23F7BD6D7E0B099E10F93D517A /* SZTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SZTools.modulemap; sourceTree = "<group>"; };
+		BE81D0D62243E8060065322D /* Device+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Ext.swift"; sourceTree = "<group>"; };
+		BE81D0D82243EC190065322D /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		C75BE59005D40576151A8DE58A3789BB /* Pods-SZTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CF5C54B3040E7491F4A681D17AAC6601 /* ZStepSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZStepSlider.swift; sourceTree = "<group>"; };
 		D6D64995C8E390BC5B60AE31F763A136 /* ZSFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSFile.swift; sourceTree = "<group>"; };
@@ -91,7 +89,7 @@
 		EBD1512602108935F45F4307F4E3D77F /* Pods-SZTools_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SZTools_Example-dummy.m"; sourceTree = "<group>"; };
 		EC8FA9373477DA246B64332C0BA4F47C /* ZSFileManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSFileManager.swift; sourceTree = "<group>"; };
 		EDBF58CD0C16492D641FA37024999957 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
-		EEF4BF749532134D9BA3E8DCDBA2449B /* Pods_SZTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SZTools_Example.framework; path = "Pods-SZTools_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF4BF749532134D9BA3E8DCDBA2449B /* Pods_SZTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F7802C4CC56686A021ECA37FE6D694 /* Pods-SZTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F673237AABC2BDC2B8060D5AB5F5B680 /* Pods-SZTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SZTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FBCB94F6FF252D3E334ACEC7B39F3241 /* Pods-SZTools_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SZTools_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -154,8 +152,10 @@
 				91FA315A4C738EF90122A36BD8508D04 /* UILabel+Ext.swift */,
 				18BCEFBFEF6DCE680F87866339207016 /* UITableView+Ext.swift */,
 				673768ECD6DC5DA170F24016F6BAD751 /* UIView+Frame.swift */,
+				BE81D0D82243EC190065322D /* UIView+Nib.swift */,
 				1289A6F954A7EB7760051E6AE25AE30C /* UIViewController+Alert.swift */,
 				15F296135041757D88A4A802C9E973B7 /* UIViewController+Loader.swift */,
+				BE81D0D62243E8060065322D /* Device+Ext.swift */,
 			);
 			name = Extensions;
 			path = SZTools/Classes/Extensions;
@@ -234,9 +234,6 @@
 		B0FB3C4D2A981F1AB1163F2E7279B383 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
-				755E707B19362AAACFA32E5FF8841505 /* ZSNoDataCell.swift */,
-				4B09ACD4C8CC0151672AB614ABB00DE7 /* ZSNoDataCollectionCell.xib */,
-				3B373F9D000FB096B7E55F28BD6FC87D /* ZSNoDataTableCell.xib */,
 				CF5C54B3040E7491F4A681D17AAC6601 /* ZStepSlider.swift */,
 			);
 			name = CustomUI;
@@ -347,6 +344,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					089A9D7341F620EE9C7482B6E3B6550B = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -389,6 +391,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				89F2ADAA049A8C93EC17FE6EAE0FA516 /* Pods-SZTools_Example-dummy.m in Sources */,
+				BE81D0D72243E8060065322D /* Device+Ext.swift in Sources */,
+				BE81D0D92243EC1A0065322D /* UIView+Nib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,9 +420,6 @@
 				77F16B6E4155A8112C28924C30094711 /* ZSFileManager.swift in Sources */,
 				D9399A141B83EE912A5AC17F0F405E70 /* ZSFilePaths.swift in Sources */,
 				A19881943E1F425B3680907A665AB3DF /* ZSFileSearcher.swift in Sources */,
-				9C324B6A85D56DD0DBDC66EA09814B0F /* ZSNoDataCell.swift in Sources */,
-				C7DBC2C460D721177F1B34622828EFB2 /* ZSNoDataCollectionCell.xib in Sources */,
-				938BD1575EBDC472E61C97D1BB804316 /* ZSNoDataTableCell.xib in Sources */,
 				B871AB3AEE412B6D598813F09E1A94C4 /* ZStepSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,8 +557,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -568,6 +568,7 @@
 			baseConfigurationReference = C75BE59005D40576151A8DE58A3789BB /* Pods-SZTools_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -590,6 +591,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -602,6 +604,7 @@
 			baseConfigurationReference = F0F7802C4CC56686A021ECA37FE6D694 /* Pods-SZTools_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -624,6 +627,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

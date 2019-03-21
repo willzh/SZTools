@@ -9,14 +9,21 @@
 import UIKit
 import SZTools
 
+
+
+
 class ViewController: UIViewController {
 
+    @IBOutlet var table: UITableView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        screenSize()
-        screenWidth()
+        _ = screenSize()
+        _ = screenWidth()
+        
+        //table?.registerCellClass(ZSNoDataTableCell.self)
         
     }
 
@@ -25,5 +32,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 1
+//    }
+//
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return tableView.frame.height
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueCell(ZSNoDataTableCell.self) as! ZSNoDataTableCell
+//
+//        cell.offsetY = 20.0
+//        cell.label_title.text = "empty cell"
+//        //cell.layoutIfNeeded()
+//
+//        return cell;
+//    }
+    
 }
 
