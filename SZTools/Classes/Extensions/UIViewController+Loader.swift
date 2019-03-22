@@ -23,7 +23,7 @@ extension UIViewController {
     }
     
     /// 返回指定的 storyboard 名称，由具体的类中实现
-    @objc public class func storyboardName() -> String? {
+    @objc open class func storyboardName() -> String? {
         return nil
     }
     

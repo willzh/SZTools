@@ -28,6 +28,8 @@
 		B871AB3AEE412B6D598813F09E1A94C4 /* ZStepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C54B3040E7491F4A681D17AAC6601 /* ZStepSlider.swift */; };
 		BE81D0D72243E8060065322D /* Device+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81D0D62243E8060065322D /* Device+Ext.swift */; };
 		BE81D0D92243EC1A0065322D /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81D0D82243EC190065322D /* UIView+Nib.swift */; };
+		BEA0B7922245345300F42F8E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0B7902245345300F42F8E /* UIView+Layout.swift */; };
+		BEA0B7932245345300F42F8E /* UIViewController+Jump.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0B7912245345300F42F8E /* UIViewController+Jump.swift */; };
 		C2ABB7075654D7B2F8D633E91FD1D01D /* SZTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 140EFCFF4F22E1B1D7396A2663DB57FE /* SZTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C66000EE26E3EFA26F0F9BE1B13BFBEB /* DispathcQueue+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D787867DE0041829D8AA08BF857AC9A /* DispathcQueue+Delay.swift */; };
 		D9399A141B83EE912A5AC17F0F405E70 /* ZSFilePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D558ECBFDD08C89F177913773605AB /* ZSFilePaths.swift */; };
@@ -80,6 +82,8 @@
 		B5953F23F7BD6D7E0B099E10F93D517A /* SZTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SZTools.modulemap; sourceTree = "<group>"; };
 		BE81D0D62243E8060065322D /* Device+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Ext.swift"; sourceTree = "<group>"; };
 		BE81D0D82243EC190065322D /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		BEA0B7902245345300F42F8E /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		BEA0B7912245345300F42F8E /* UIViewController+Jump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Jump.swift"; sourceTree = "<group>"; };
 		C75BE59005D40576151A8DE58A3789BB /* Pods-SZTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CF5C54B3040E7491F4A681D17AAC6601 /* ZStepSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZStepSlider.swift; sourceTree = "<group>"; };
 		D6D64995C8E390BC5B60AE31F763A136 /* ZSFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSFile.swift; sourceTree = "<group>"; };
@@ -153,8 +157,10 @@
 				18BCEFBFEF6DCE680F87866339207016 /* UITableView+Ext.swift */,
 				673768ECD6DC5DA170F24016F6BAD751 /* UIView+Frame.swift */,
 				BE81D0D82243EC190065322D /* UIView+Nib.swift */,
+				BEA0B7902245345300F42F8E /* UIView+Layout.swift */,
 				1289A6F954A7EB7760051E6AE25AE30C /* UIViewController+Alert.swift */,
 				15F296135041757D88A4A802C9E973B7 /* UIViewController+Loader.swift */,
+				BEA0B7912245345300F42F8E /* UIViewController+Jump.swift */,
 				BE81D0D62243E8060065322D /* Device+Ext.swift */,
 			);
 			name = Extensions;
@@ -390,6 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA0B7922245345300F42F8E /* UIView+Layout.swift in Sources */,
+				BEA0B7932245345300F42F8E /* UIViewController+Jump.swift in Sources */,
 				89F2ADAA049A8C93EC17FE6EAE0FA516 /* Pods-SZTools_Example-dummy.m in Sources */,
 				BE81D0D72243E8060065322D /* Device+Ext.swift in Sources */,
 				BE81D0D92243EC1A0065322D /* UIView+Nib.swift in Sources */,
