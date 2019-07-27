@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SZTools'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'Swift 常用方法整理.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/willzh/SZTools.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.swift_version = '4.0'
   
