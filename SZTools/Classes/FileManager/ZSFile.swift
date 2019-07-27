@@ -231,7 +231,7 @@ public class ZSFile: NSObject {
     
     /// 文档后缀
     private func docsExts() -> [String] {
-        return ["txt", "rtf", "rtfd"]
+        return ["txt", "rtf", "rtfd", "md"]
     }
     
     /// office 文件后缀
