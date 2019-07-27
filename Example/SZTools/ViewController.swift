@@ -20,9 +20,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        _ = screenSize()
-        _ = screenWidth()
-        
         //table?.registerCellClass(ZSNoDataTableCell.self)
         
     }

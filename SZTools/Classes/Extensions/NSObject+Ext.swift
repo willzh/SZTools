@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension NSObject {
+public extension NSObject {
     
     // 类方法，获取类名
-    public class func zs_className() -> String {
+    class func zs_className() -> String {
         
         let components = description().components(separatedBy: ".")
         if components.count > 1 {
@@ -21,7 +21,7 @@ extension NSObject {
     }
 
     // 实例方法，获取类名
-    public var zs_className: String {
+    var zs_className: String {
         get {
             return String(describing: type(of: self))
         }

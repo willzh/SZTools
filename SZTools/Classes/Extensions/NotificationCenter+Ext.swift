@@ -9,22 +9,22 @@
 import Foundation
 
 
-extension NotificationCenter {
+public extension NotificationCenter {
     
     
-    public class func post(_ name: String, object: Any? = nil, info: [AnyHashable : Any]? = nil) {
+    class func zs_post(_ name: String, object: Any? = nil, info: [AnyHashable : Any]? = nil) {
         NotificationCenter.default.post(name: NSNotification.Name(name), object: object, userInfo: info)
     }
     
-    public class func listen(_ observer: Any, sel: Selector, name: String) {
+    class func zs_listen(_ observer: Any, sel: Selector, name: String) {
         NotificationCenter.default.addObserver(observer, selector: sel, name: NSNotification.Name(name), object: nil)
     }
     
-    public class func removeAll(_ observer: Any) {
+    class func zs_removeAll(_ observer: Any) {
         NotificationCenter.default.removeObserver(observer)
     }
     
-    public class func remove(_ observer: Any, _ name: String) {
+    class func zs_remove(_ observer: Any, _ name: String) {
         NotificationCenter.default.removeObserver(observer, name: NSNotification.Name(name), object: nil)
     }
     

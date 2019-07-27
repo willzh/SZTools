@@ -60,9 +60,9 @@ public class ZStepSlider: UIControl {
             layer.contents = trackDotImage?.cgImage
         }else {
             let size = thumbSize()
-            layer.path = UIBezierPath(roundedRect: Rect(0, 0, size.width, size.height), cornerRadius: size.height / 2.0).cgPath
+            layer.path = UIBezierPath(roundedRect: zs_Rect(0, 0, size.width, size.height), cornerRadius: size.height / 2.0).cgPath
             layer.fillColor = thumbDotColor.cgColor
-            layer.frame = Rect(0, self.bounds.midY - size.height / 2.0, size)
+            layer.frame = zs_Rect(0, self.bounds.midY - size.height / 2.0, size)
         }
         
         return layer
@@ -93,7 +93,7 @@ public class ZStepSlider: UIControl {
         let len = frame.width / CGFloat(maxCount - 1)
         
         let size = thumbSize()
-        thumbLayer.frame = Rect(len * CGFloat(index) - size.width / 2.0, (frame.height - size.height) / 2.0, size.width, size.height)
+        thumbLayer.frame = zs_Rect(len * CGFloat(index) - size.width / 2.0, (frame.height - size.height) / 2.0, size.width, size.height)
         
     }
     
@@ -104,7 +104,7 @@ public class ZStepSlider: UIControl {
     override public func draw(_ rect: CGRect) {
         
         // 背景
-        let sliderFrame = Rect(trackHeight / 2.0, (rect.height - trackHeight) / 2.0, rect.width - trackHeight, trackHeight)
+        let sliderFrame = zs_Rect(trackHeight / 2.0, (rect.height - trackHeight) / 2.0, rect.width - trackHeight, trackHeight)
         
         let ctx = UIGraphicsGetCurrentContext()
         
@@ -128,7 +128,7 @@ public class ZStepSlider: UIControl {
         // 点
         for i in 0..<maxCount {
             let x = (len + dotLen) * CGFloat(i)
-            let dotFrame = Rect(x, sliderFrame.midY - trackHeight, dotLen, dotLen)
+            let dotFrame = zs_Rect(x, sliderFrame.midY - trackHeight, dotLen, dotLen)
             //ctx?.setFillColor((i > index) ? thumbDotColor.cgColor : trackDotColor.cgColor)
             ctx?.setFillColor(trackDotColor.cgColor)
             ctx?.fillEllipse(in: dotFrame)
@@ -166,12 +166,12 @@ public class ZStepSlider: UIControl {
             let dotLen = trackHeight * 2
             // 点之间的间隔长度
             let len = (frame.width - dotLen * CGFloat(maxCount)) / CGFloat(maxCount - 1)
-            let sliderFrame = Rect(trackHeight / 2.0, (frame.height - trackHeight) / 2.0, frame.width - trackHeight, trackHeight)
+            let sliderFrame = zs_Rect(trackHeight / 2.0, (frame.height - trackHeight) / 2.0, frame.width - trackHeight, trackHeight)
             
             // 点
             for i in 0..<maxCount {
                 let x = (len + dotLen) * CGFloat(i)
-                let dotFrame = Rect(x, sliderFrame.midY - trackHeight, dotLen, dotLen)
+                let dotFrame = zs_Rect(x, sliderFrame.midY - trackHeight, dotLen, dotLen)
                 
                 if dotFrame.insetBy(dx: -10, dy: -10).contains(startTouchPosition!) {
                     
@@ -183,7 +183,7 @@ public class ZStepSlider: UIControl {
                         var minX = dotFrame.midX - size.width / 2.0
                         minX = fmax(minX, 0)
                         minX = fmin(minX, sliderFrame.maxX - size.width)
-                        thumbLayer.frame = thumbLayer.frame.setMinX(minX)
+                        thumbLayer.frame = thumbLayer.frame.zs_setMinX(minX)
                         
                     }
                     break
@@ -203,7 +203,7 @@ public class ZStepSlider: UIControl {
         posX = fmin(posX, bounds.maxX - size.width)
         
         withoutCAAnimation {
-            thumbLayer.frame = thumbLayer.frame.setMinX(posX)
+            thumbLayer.frame = thumbLayer.frame.zs_setMinX(posX)
             
         }
         
@@ -233,7 +233,7 @@ public class ZStepSlider: UIControl {
             sendActions(for: .valueChanged)
         }
         let size = thumbSize()
-        thumbLayer.frame = thumbLayer.frame.setMinX(len * CGFloat(i) - size.width / 2.0)
+        thumbLayer.frame = thumbLayer.frame.zs_setMinX(len * CGFloat(i) - size.width / 2.0)
         
     }
     

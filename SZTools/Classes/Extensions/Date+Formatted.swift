@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     
     /// 简单格式化时间，返回距离当前时间的间隔，比如 1h, 1m, 1M 等
-    public func simpleFormatted() -> String {
+    func zs_simpleFormatted() -> String {
         let t = Date().timeIntervalSince(self)
         
         let m = t / 60;
@@ -35,7 +35,7 @@ extension Date {
         }
     }
     
-    public func format(_ format: String) -> String {
+    func zs_format(_ format: String) -> String {
         let df = DateFormatter()
         df.dateFormat = format
         return df.string(from: self)

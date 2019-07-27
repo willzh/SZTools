@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension UIButton {
+public extension UIButton {
     
-    public class func create(_ type: UIButton.ButtonType = .system, image: UIImage?, title: String?, frame: CGRect = .zero) -> UIButton {
+    class func zs_create(_ type: UIButton.ButtonType = .system, image: UIImage?, title: String?, frame: CGRect = .zero) -> UIButton {
         let btn = UIButton.init(type: type)
         btn.frame = frame
         btn.setTitle(title, for: UIControl.State.normal)
@@ -20,7 +20,7 @@ extension UIButton {
         return btn
     }
     
-    public class func create(_ type: UIButton.ButtonType = .system, image: UIImage?, title: String?, frame: CGRect, target: Any?, action: Selector, forEvents: UIControl.Event) -> UIButton {
+    class func zs_create(_ type: UIButton.ButtonType = .system, image: UIImage?, title: String?, frame: CGRect, target: Any?, action: Selector, forEvents: UIControl.Event) -> UIButton {
         let btn = UIButton.init(type: type)
         btn.frame = frame
         btn.setTitle(title, for: UIControl.State.normal)

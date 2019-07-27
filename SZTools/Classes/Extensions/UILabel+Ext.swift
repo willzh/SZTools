@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     
     
     /// 创建一个 label
-    public class func create(font: UIFont, color: UIColor, text: String, frame: CGRect, alignment: NSTextAlignment = .left) -> UILabel {
+    class func zs_create(font: UIFont, color: UIColor, text: String, frame: CGRect, alignment: NSTextAlignment = .left) -> UILabel {
         let label = UILabel(frame: frame)
         label.font = font
         label.textColor = color
@@ -24,7 +24,7 @@ extension UILabel {
     }
     
     /// 计算 label 中文字 size
-    public func textSize() -> CGSize {
+    func zs_textSize() -> CGSize {
         
         let style = NSMutableParagraphStyle()
         style.lineBreakMode = .byWordWrapping

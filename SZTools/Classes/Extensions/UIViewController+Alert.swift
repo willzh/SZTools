@@ -12,7 +12,7 @@ import UIKit
 
 
 
-extension UIViewController {
+public extension UIViewController {
     
     /// 显示一个 UIAlertController
     ///
@@ -22,7 +22,7 @@ extension UIViewController {
     ///   - cancelTitle: 取消键标题，默认为 '取消'
     ///   - buttons: 其他按钮标题
     ///   - handle: 点击按钮回调，可以根据按钮标题名称来判断具体事件
-    open func zs_showSystemAlert(title: String?, msg: String?, cancelTitle: String? = "取消", buttons: [String], handle: ((_ title: String) -> Void)?) {
+    func zs_showSystemAlert(title: String?, msg: String?, cancelTitle: String? = "取消", buttons: [String], handle: ((_ title: String) -> Void)?) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
         
         // 添加取消按钮

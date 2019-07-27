@@ -26,6 +26,7 @@
 		A19881943E1F425B3680907A665AB3DF /* ZSFileSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B11A7EF9733BA31415B5921EE9DA51 /* ZSFileSearcher.swift */; };
 		A9FC2F4C73576455E5472BFCA412F87A /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586C24B3282AB4B832DC60E6DC68233 /* UIButton+Ext.swift */; };
 		B871AB3AEE412B6D598813F09E1A94C4 /* ZStepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C54B3040E7491F4A681D17AAC6601 /* ZStepSlider.swift */; };
+		BE79FDDF22EBFEDA0065E5C4 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FDDE22EBFEDA0065E5C4 /* Font+Ext.swift */; };
 		BE81D0D72243E8060065322D /* Device+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81D0D62243E8060065322D /* Device+Ext.swift */; };
 		BE81D0D92243EC1A0065322D /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81D0D82243EC190065322D /* UIView+Nib.swift */; };
 		BEA0B7922245345300F42F8E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0B7902245345300F42F8E /* UIView+Layout.swift */; };
@@ -80,6 +81,7 @@
 		9586C24B3282AB4B832DC60E6DC68233 /* UIButton+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		AE43D6423F688178A59E622CEF3061EB /* SZTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SZTools-dummy.m"; sourceTree = "<group>"; };
 		B5953F23F7BD6D7E0B099E10F93D517A /* SZTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SZTools.modulemap; sourceTree = "<group>"; };
+		BE79FDDE22EBFEDA0065E5C4 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
 		BE81D0D62243E8060065322D /* Device+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Ext.swift"; sourceTree = "<group>"; };
 		BE81D0D82243EC190065322D /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		BEA0B7902245345300F42F8E /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				15F296135041757D88A4A802C9E973B7 /* UIViewController+Loader.swift */,
 				BEA0B7912245345300F42F8E /* UIViewController+Jump.swift */,
 				BE81D0D62243E8060065322D /* Device+Ext.swift */,
+				BE79FDDE22EBFEDA0065E5C4 /* Font+Ext.swift */,
 			);
 			name = Extensions;
 			path = SZTools/Classes/Extensions;
@@ -361,6 +364,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -398,6 +402,7 @@
 			files = (
 				BEA0B7922245345300F42F8E /* UIView+Layout.swift in Sources */,
 				BEA0B7932245345300F42F8E /* UIViewController+Jump.swift in Sources */,
+				BE79FDDF22EBFEDA0065E5C4 /* Font+Ext.swift in Sources */,
 				89F2ADAA049A8C93EC17FE6EAE0FA516 /* Pods-SZTools_Example-dummy.m in Sources */,
 				BE81D0D72243E8060065322D /* Device+Ext.swift in Sources */,
 				BE81D0D92243EC1A0065322D /* UIView+Nib.swift in Sources */,

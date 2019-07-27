@@ -10,6 +10,18 @@
 
 import UIKit
 
+
+public enum FileType : Int {
+    case folder      //!< 文件夹
+    case doc         //!< 文档
+    case photo       //!< 图片
+    case video       //!< 视频
+    case audio       //!< 音频
+    case pdf         //!< PDF
+    case office      //!< Office
+    case other       //!< 其他
+}
+
 public class ZSFile: NSObject {
 
     //MARK: - 参数
@@ -28,7 +40,8 @@ public class ZSFile: NSObject {
     public var modifyDate: Date?
     /// 文件大小
     public var fileSize: Int64 = 0
-    
+    /// 文件类型
+    public var fileType: FileType = .other
     
     
     
@@ -43,12 +56,12 @@ public class ZSFile: NSObject {
     //MARK: - Public Methods
     /// 格式化的创建日期
     public func formatedCreateDate() -> String? {
-        return createDate?.simpleFormatted()
+        return createDate?.zs_simpleFormatted()
     }
     
     /// 格式化的更新日期
     public func formatedModifyDate() -> String? {
-        return modifyDate?.simpleFormatted()
+        return modifyDate?.zs_simpleFormatted()
     }
     
     /// 文件的大小描述，ext: 3M, 2G, 20K...
@@ -67,35 +80,23 @@ public class ZSFile: NSObject {
     
     /// 判断是否 PDF 文件
     public func isPDF() -> Bool {
-        if path == nil  {
-            return false
-        }
-        let str = path! as NSString
-        return ["pdf"].contains(str.pathExtension)
+        return checkSuffix(["pdf"])
     }
     
     /// 判断是否图片文件
-    public func isImage() -> Bool {
-        if path == nil  {
-            return false
-        }
-        let str = path! as NSString
-        let exts = ["jpg", "jpeg", "gif", "thm", "bmpf", "bmp", "tif", "tiff", "png", "cur", "xbm", "ico", "icns", "j2k", "tga"]
-        return exts.contains(str.pathExtension.lowercased())
+    public func isPhoto() -> Bool {
+        return fileType == .pdf
     }
     
     /// 判断是否视频文件
     public func isVideo() -> Bool {
-        if path == nil  {
-            return false
-        }
-        let str = path! as NSString
-        let exts = ["mp4", "mkv", "gif", "thm", "bmpf", "bmp", "tif", "tiff", "png", "cur", "xbm", "ico", "icns", "j2k", "tga"]
-        return exts.contains(str.pathExtension.lowercased())
+        return fileType == .video
     }
     
-    
-    
+    /// 判断是否文档
+    public func isDocs() -> Bool {
+        return fileType == .doc
+    }
     
     
     
@@ -115,6 +116,27 @@ public class ZSFile: NSObject {
         isDir = attrDict![.type] as? FileAttributeType == .typeDirectory
         if isDir {
             numberOfFiles = numberOfFiles(path!, traverse: false)
+            fileType = .folder
+        }else {
+            // 文件类型
+            let str = path! as NSString
+            let ext = str.pathExtension.lowercased()
+            
+            if ext == "pdf" {
+                fileType = .pdf
+            }else if photoExts().contains(ext) {
+                fileType = .photo
+            }else if videoExts().contains(ext) {
+                fileType = .video
+            }else if audioExts().contains(ext) {
+                fileType = .audio
+            }else if docsExts().contains(ext) {
+                fileType = .doc
+            }else if officeExts().contains(ext) {
+                fileType = .office
+            }else {
+                fileType = .other
+            }
         }
         
         createDate = attrDict![.creationDate] as? Date
@@ -122,6 +144,15 @@ public class ZSFile: NSObject {
         
         fileSize = attrDict![.size] as! Int64 / 1024
         
+    }
+    
+    /// 检查文件后缀
+    private func checkSuffix(_ exts: [String]) -> Bool {
+        if path == nil  {
+            return false
+        }
+        let str = path! as NSString
+        return exts.contains(str.pathExtension.lowercased())
     }
     
     
@@ -182,6 +213,31 @@ public class ZSFile: NSObject {
         return count
     }
     
+    
+    /// 图片后缀
+    private func photoExts() -> [String] {
+        return ["jpg", "jpeg", "gif", "thm", "bmpf", "bmp", "pcx", "exif", "fpx", "svg", "psd", "tif", "tiff", "png", "cur", "xbm", "ico", "icns", "j2k", "tga", "heic"]
+    }
+    
+    /// 视频后缀
+    private func videoExts() -> [String] {
+        return ["mp4", "mkv", "rm", "rmvb", "avi", "mov", "wmv", "asf", "3gp", "flv", "f4v", "rmhd", "webm", "mpg", "mpeg", "vob", "swf"]
+    }
+    
+    /// 音频后缀
+    private func audioExts() -> [String] {
+        return ["mp3", "wav", "wma", "ogg", "aiff", "aac", "avi", "mid", "ape", "flac", "amr"]
+    }
+    
+    /// 文档后缀
+    private func docsExts() -> [String] {
+        return ["txt", "rtf", "rtfd"]
+    }
+    
+    /// office 文件后缀
+    private func officeExts() -> [String] {
+        return ["doc", "docx", "xls", "xlsx", "ppt", "pptx", "numbers", "pages", "keynote"]
+    }
     
     
 }

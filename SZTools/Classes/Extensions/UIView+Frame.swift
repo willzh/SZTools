@@ -10,25 +10,25 @@ import UIKit
 
 
 
-extension UIView {
+public extension UIView {
     
     //MARK: - frame
     /// set origin x
-    public func setMinX(_ minx: CGFloat) {
+    func zs_setMinX(_ minx: CGFloat) {
         
         var sf = self.frame
         sf.origin.x = minx
         self.frame = sf
     }
     
-    public func setMinY(_ miny: CGFloat) {
+    func zs_setMinY(_ miny: CGFloat) {
         
         var sf = self.frame
         sf.origin.y = miny
         self.frame = sf
     }
     
-    public func setOrigin(_ x: CGFloat, _ y: CGFloat) {
+    func zs_setOrigin(_ x: CGFloat, _ y: CGFloat) {
         
         var sf = self.frame
         sf.origin.x = x
@@ -36,21 +36,21 @@ extension UIView {
         self.frame = sf
     }
     
-    public func setWidth(_ width: CGFloat) {
+    func zs_setWidth(_ width: CGFloat) {
         
         var sf = self.frame
         sf.size.width = width
         self.frame = sf
     }
     
-    public func setHeight(_ height: CGFloat) {
+    func zs_setHeight(_ height: CGFloat) {
         
         var sf = self.frame
         sf.size.height = height
         self.frame = sf
     }
     
-    public func setSize(_ width: CGFloat, _ height: CGFloat) {
+    func zs_setSize(_ width: CGFloat, _ height: CGFloat) {
         
         var sf = self.frame
         sf.size.width = width
@@ -60,7 +60,7 @@ extension UIView {
     
     
     //MARK: - create
-    public class func create(_ frame: CGRect, backgroundColor: UIColor = .white) -> UIView {
+    class func zs_create(_ frame: CGRect, backgroundColor: UIColor = .white) -> UIView {
         let tv = UIView(frame: frame)
         tv.backgroundColor = backgroundColor
         

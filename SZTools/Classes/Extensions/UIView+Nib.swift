@@ -7,25 +7,25 @@
 
 import Foundation
 
-extension UIView {
+public extension UIView {
     
-    public class func nib(nibName: String) -> UINib {
+    class func zs_nib(nibName: String) -> UINib {
         return UINib(nibName: nibName, bundle: Bundle.main)
     }
     
-    public class func instanceFromNib() -> UIView? {
-        return instanceFromNib(nibName: className())
+    class func zs_instanceFromNib() -> UIView? {
+        return zs_instanceFromNib(nibName: className())
     }
     
-    public class func instanceFromNib(nibName: String) -> UIView? {
-        return instanceFromNib(nibName: nibName, owner: nil)
+    class func zs_instanceFromNib(nibName: String) -> UIView? {
+        return zs_instanceFromNib(nibName: nibName, owner: nil)
     }
     
-    public class func instanceFromNib(nibName: String, owner: Any?) -> UIView? {
-        return instanceFromNib(nibName: nibName, owner: owner, bundle: Bundle.main)
+    class func zs_instanceFromNib(nibName: String, owner: Any?) -> UIView? {
+        return zs_instanceFromNib(nibName: nibName, owner: owner, bundle: Bundle.main)
     }
     
-    public class func instanceFromNib(nibName: String, owner: Any?, bundle: Bundle) -> UIView? {
+    class func zs_instanceFromNib(nibName: String, owner: Any?, bundle: Bundle) -> UIView? {
         let arr = bundle.loadNibNamed(nibName, owner: owner, options: nil)
         guard let elements = arr else {
             return nil
