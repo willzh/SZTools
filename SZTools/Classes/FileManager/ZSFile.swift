@@ -29,7 +29,11 @@ public class ZSFile: NSObject {
     public var selected: Bool = false
     
     /// 文件的路径
-    public var path: String?
+    public var path: String? {
+        didSet {
+            getAttributes()
+        }
+    }
     /// 是否文件夹
     public var isDir: Bool = false
     /// 文件夹中的文件数量
@@ -50,6 +54,7 @@ public class ZSFile: NSObject {
         super.init()
         
         self.path = path
+        
     }
     
     

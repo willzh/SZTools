@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SZTools'
-  s.version          = '1.0.9'
+  s.version          = '1.0.10'
   s.summary          = 'Swift 常用方法整理.'
 
 # This description is used to generate tags and improve search results.
