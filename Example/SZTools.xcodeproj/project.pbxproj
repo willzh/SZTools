@@ -13,6 +13,31 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		BE79FDF522ED32B50065E5C4 /* itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = BE79FDF422ED32B50065E5C4 /* itunes.html */; };
+		BE79FE1622ED338C0065E5C4 /* ZStepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FDF922ED338C0065E5C4 /* ZStepSlider.swift */; };
+		BE79FE1822ED338C0065E5C4 /* DispathcQueue+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FDFC22ED338C0065E5C4 /* DispathcQueue+Delay.swift */; };
+		BE79FE1922ED338C0065E5C4 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FDFD22ED338C0065E5C4 /* UILabel+Ext.swift */; };
+		BE79FE1A22ED338C0065E5C4 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FDFE22ED338C0065E5C4 /* UICollectionView+Ext.swift */; };
+		BE79FE1B22ED338C0065E5C4 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FDFF22ED338C0065E5C4 /* Font+Ext.swift */; };
+		BE79FE1C22ED338C0065E5C4 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0022ED338C0065E5C4 /* UITableView+Ext.swift */; };
+		BE79FE1D22ED338C0065E5C4 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0122ED338C0065E5C4 /* UIView+Frame.swift */; };
+		BE79FE1E22ED338C0065E5C4 /* Device+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0222ED338C0065E5C4 /* Device+Ext.swift */; };
+		BE79FE1F22ED338C0065E5C4 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0322ED338C0065E5C4 /* UIButton+Ext.swift */; };
+		BE79FE2022ED338C0065E5C4 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0422ED338C0065E5C4 /* String+Ext.swift */; };
+		BE79FE2122ED338C0065E5C4 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0522ED338C0065E5C4 /* UIColor+Ext.swift */; };
+		BE79FE2222ED338C0065E5C4 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0622ED338C0065E5C4 /* UIView+Layout.swift */; };
+		BE79FE2322ED338C0065E5C4 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0722ED338C0065E5C4 /* Date+Formatted.swift */; };
+		BE79FE2422ED338C0065E5C4 /* UIViewController+SZExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0822ED338C0065E5C4 /* UIViewController+SZExt.swift */; };
+		BE79FE2522ED338C0065E5C4 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0922ED338C0065E5C4 /* UIView+Nib.swift */; };
+		BE79FE2622ED338C0065E5C4 /* NotificationCenter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0A22ED338C0065E5C4 /* NotificationCenter+Ext.swift */; };
+		BE79FE2722ED338C0065E5C4 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0B22ED338C0065E5C4 /* NSObject+Ext.swift */; };
+		BE79FE2822ED338C0065E5C4 /* CGRect+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0C22ED338C0065E5C4 /* CGRect+Ext.swift */; };
+		BE79FE2922ED338C0065E5C4 /* ZSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE0E22ED338C0065E5C4 /* ZSConstants.swift */; };
+		BE79FE2A22ED338C0065E5C4 /* ZSFileSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE1022ED338C0065E5C4 /* ZSFileSearcher.swift */; };
+		BE79FE2B22ED338C0065E5C4 /* ZSFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE1122ED338C0065E5C4 /* ZSFile.swift */; };
+		BE79FE2C22ED338C0065E5C4 /* ZSFilePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE1222ED338C0065E5C4 /* ZSFilePaths.swift */; };
+		BE79FE2D22ED338C0065E5C4 /* ZSFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE1322ED338C0065E5C4 /* ZSFileManager.swift */; };
+		BE79FE2E22ED338C0065E5C4 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BE79FE1522ED338C0065E5C4 /* .gitkeep */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +55,31 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9B9900A90B7C6D2982CDB8D5 /* Pods-SZTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZTools_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZTools_Tests/Pods-SZTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B53E0434EE4D1D075928CBDA /* SZTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SZTools.podspec; path = ../SZTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE79FDF422ED32B50065E5C4 /* itunes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = itunes.html; sourceTree = "<group>"; };
+		BE79FDF922ED338C0065E5C4 /* ZStepSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZStepSlider.swift; sourceTree = "<group>"; };
+		BE79FDFC22ED338C0065E5C4 /* DispathcQueue+Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispathcQueue+Delay.swift"; sourceTree = "<group>"; };
+		BE79FDFD22ED338C0065E5C4 /* UILabel+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		BE79FDFE22ED338C0065E5C4 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		BE79FDFF22ED338C0065E5C4 /* Font+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		BE79FE0022ED338C0065E5C4 /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		BE79FE0122ED338C0065E5C4 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		BE79FE0222ED338C0065E5C4 /* Device+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+Ext.swift"; sourceTree = "<group>"; };
+		BE79FE0322ED338C0065E5C4 /* UIButton+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		BE79FE0422ED338C0065E5C4 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		BE79FE0522ED338C0065E5C4 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		BE79FE0622ED338C0065E5C4 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		BE79FE0722ED338C0065E5C4 /* Date+Formatted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
+		BE79FE0822ED338C0065E5C4 /* UIViewController+SZExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SZExt.swift"; sourceTree = "<group>"; };
+		BE79FE0922ED338C0065E5C4 /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		BE79FE0A22ED338C0065E5C4 /* NotificationCenter+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Ext.swift"; sourceTree = "<group>"; };
+		BE79FE0B22ED338C0065E5C4 /* NSObject+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
+		BE79FE0C22ED338C0065E5C4 /* CGRect+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Ext.swift"; sourceTree = "<group>"; };
+		BE79FE0E22ED338C0065E5C4 /* ZSConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSConstants.swift; sourceTree = "<group>"; };
+		BE79FE1022ED338C0065E5C4 /* ZSFileSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSFileSearcher.swift; sourceTree = "<group>"; };
+		BE79FE1122ED338C0065E5C4 /* ZSFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSFile.swift; sourceTree = "<group>"; };
+		BE79FE1222ED338C0065E5C4 /* ZSFilePaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSFilePaths.swift; sourceTree = "<group>"; };
+		BE79FE1322ED338C0065E5C4 /* ZSFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSFileManager.swift; sourceTree = "<group>"; };
+		BE79FE1522ED338C0065E5C4 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		CFFED83198A78FF383416D9F /* Pods-SZTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZTools_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZTools_Example/Pods-SZTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E17C5016A70117C214126268 /* Pods_SZTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +123,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				BE79FDF622ED338C0065E5C4 /* SZTools */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for SZTools";
@@ -83,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
+				BE79FDF422ED32B50065E5C4 /* itunes.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +169,86 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE79FDF622ED338C0065E5C4 /* SZTools */ = {
+			isa = PBXGroup;
+			children = (
+				BE79FDF722ED338C0065E5C4 /* Classes */,
+				BE79FE1422ED338C0065E5C4 /* Assets */,
+			);
+			name = SZTools;
+			path = ../../SZTools;
+			sourceTree = "<group>";
+		};
+		BE79FDF722ED338C0065E5C4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BE79FDF822ED338C0065E5C4 /* CustomUI */,
+				BE79FDFB22ED338C0065E5C4 /* Extensions */,
+				BE79FE0D22ED338C0065E5C4 /* Manager */,
+				BE79FE0F22ED338C0065E5C4 /* FileManager */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BE79FDF822ED338C0065E5C4 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				BE79FDF922ED338C0065E5C4 /* ZStepSlider.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		BE79FDFB22ED338C0065E5C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE79FDFC22ED338C0065E5C4 /* DispathcQueue+Delay.swift */,
+				BE79FDFD22ED338C0065E5C4 /* UILabel+Ext.swift */,
+				BE79FDFE22ED338C0065E5C4 /* UICollectionView+Ext.swift */,
+				BE79FDFF22ED338C0065E5C4 /* Font+Ext.swift */,
+				BE79FE0022ED338C0065E5C4 /* UITableView+Ext.swift */,
+				BE79FE0122ED338C0065E5C4 /* UIView+Frame.swift */,
+				BE79FE0222ED338C0065E5C4 /* Device+Ext.swift */,
+				BE79FE0322ED338C0065E5C4 /* UIButton+Ext.swift */,
+				BE79FE0422ED338C0065E5C4 /* String+Ext.swift */,
+				BE79FE0522ED338C0065E5C4 /* UIColor+Ext.swift */,
+				BE79FE0622ED338C0065E5C4 /* UIView+Layout.swift */,
+				BE79FE0722ED338C0065E5C4 /* Date+Formatted.swift */,
+				BE79FE0822ED338C0065E5C4 /* UIViewController+SZExt.swift */,
+				BE79FE0922ED338C0065E5C4 /* UIView+Nib.swift */,
+				BE79FE0A22ED338C0065E5C4 /* NotificationCenter+Ext.swift */,
+				BE79FE0B22ED338C0065E5C4 /* NSObject+Ext.swift */,
+				BE79FE0C22ED338C0065E5C4 /* CGRect+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE79FE0D22ED338C0065E5C4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BE79FE0E22ED338C0065E5C4 /* ZSConstants.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BE79FE0F22ED338C0065E5C4 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				BE79FE1022ED338C0065E5C4 /* ZSFileSearcher.swift */,
+				BE79FE1122ED338C0065E5C4 /* ZSFile.swift */,
+				BE79FE1222ED338C0065E5C4 /* ZSFilePaths.swift */,
+				BE79FE1322ED338C0065E5C4 /* ZSFileManager.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		BE79FE1422ED338C0065E5C4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BE79FE1522ED338C0065E5C4 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,7 +260,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				DFC23947B0D82B9322ED5107 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +313,8 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				BE79FE2E22ED338C0065E5C4 /* .gitkeep in Resources */,
+				BE79FDF522ED32B50065E5C4 /* itunes.html in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,28 +344,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DFC23947B0D82B9322ED5107 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SZTools_Example/Pods-SZTools_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SZTools/SZTools.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SZTools.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZTools_Example/Pods-SZTools_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -241,7 +352,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				BE79FE1B22ED338C0065E5C4 /* Font+Ext.swift in Sources */,
+				BE79FE1622ED338C0065E5C4 /* ZStepSlider.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				BE79FE1822ED338C0065E5C4 /* DispathcQueue+Delay.swift in Sources */,
+				BE79FE1E22ED338C0065E5C4 /* Device+Ext.swift in Sources */,
+				BE79FE2122ED338C0065E5C4 /* UIColor+Ext.swift in Sources */,
+				BE79FE2A22ED338C0065E5C4 /* ZSFileSearcher.swift in Sources */,
+				BE79FE2022ED338C0065E5C4 /* String+Ext.swift in Sources */,
+				BE79FE2522ED338C0065E5C4 /* UIView+Nib.swift in Sources */,
+				BE79FE1D22ED338C0065E5C4 /* UIView+Frame.swift in Sources */,
+				BE79FE1C22ED338C0065E5C4 /* UITableView+Ext.swift in Sources */,
+				BE79FE1A22ED338C0065E5C4 /* UICollectionView+Ext.swift in Sources */,
+				BE79FE1F22ED338C0065E5C4 /* UIButton+Ext.swift in Sources */,
+				BE79FE2222ED338C0065E5C4 /* UIView+Layout.swift in Sources */,
+				BE79FE2B22ED338C0065E5C4 /* ZSFile.swift in Sources */,
+				BE79FE2422ED338C0065E5C4 /* UIViewController+SZExt.swift in Sources */,
+				BE79FE2C22ED338C0065E5C4 /* ZSFilePaths.swift in Sources */,
+				BE79FE2622ED338C0065E5C4 /* NotificationCenter+Ext.swift in Sources */,
+				BE79FE2922ED338C0065E5C4 /* ZSConstants.swift in Sources */,
+				BE79FE1922ED338C0065E5C4 /* UILabel+Ext.swift in Sources */,
+				BE79FE2322ED338C0065E5C4 /* Date+Formatted.swift in Sources */,
+				BE79FE2D22ED338C0065E5C4 /* ZSFileManager.swift in Sources */,
+				BE79FE2722ED338C0065E5C4 /* NSObject+Ext.swift in Sources */,
+				BE79FE2822ED338C0065E5C4 /* CGRect+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,8 +512,6 @@
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-framework",
-					"\"SZTools\"",
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -401,8 +533,6 @@
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-framework",
-					"\"SZTools\"",
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

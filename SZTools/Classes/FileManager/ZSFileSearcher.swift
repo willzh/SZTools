@@ -47,7 +47,7 @@ public class ZSFileSearcher: NSObject {
         
         var fileMods = [ZSFile]()
         for url in contents! {
-            fileMods.append(ZSFile(path: url.path))
+            fileMods.append(ZSFile(url.path))
         }
         
         if sortType == .unsort {
@@ -93,7 +93,7 @@ public class ZSFileSearcher: NSObject {
         
         var fileMods = [ZSFile]()
         for url in contents! {
-            let file = ZSFile(path: url.path)
+            let file = ZSFile(url.path)
             if file.isDir {
                 fileMods.append(file)
             }

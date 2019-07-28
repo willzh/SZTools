@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SZTools
+//import SZTools
 
 
 
@@ -21,6 +21,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //table?.registerCellClass(ZSNoDataTableCell.self)
+        
+        let path = Bundle.main.path(forResource: "itunes", ofType: "html")
+        NSLog("path:%@", path ?? "")
+        let file = ZSFile(path!)
+        file.path = path!
+        NSLog("file.name:%@", file.path ?? "")
         
     }
 

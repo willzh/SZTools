@@ -50,11 +50,11 @@ public class ZSFile: NSObject {
     
     
     //MARK: - init
-    public init(path: String) {
+    public init(_ filePath: String) {
         super.init()
         
-        self.path = path
-        
+        self.path = filePath
+        getAttributes() // 在初始化的时候，是不会调用 didSet 方法的，所以要显式调用一次
     }
     
     
