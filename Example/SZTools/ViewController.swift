@@ -22,11 +22,10 @@ class ViewController: UIViewController {
         
         //table?.registerCellClass(ZSNoDataTableCell.self)
         
-        let path = Bundle.main.path(forResource: "itunes", ofType: "html")
+        let path = Bundle.main.path(forResource: "itunes", ofType: "pdf")
         NSLog("path:%@", path ?? "")
         let file = ZSFile(path!)
-        file.path = path!
-        NSLog("file.name:%@", file.path ?? "")
+        print("file type: \(file.fileType)")
         
     }
 

@@ -13,7 +13,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		BE79FDF522ED32B50065E5C4 /* itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = BE79FDF422ED32B50065E5C4 /* itunes.html */; };
+		BE79FDF522ED32B50065E5C4 /* itunes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BE79FDF422ED32B50065E5C4 /* itunes.pdf */; };
 		BE79FE1622ED338C0065E5C4 /* ZStepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FDF922ED338C0065E5C4 /* ZStepSlider.swift */; };
 		BE79FE1822ED338C0065E5C4 /* DispathcQueue+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FDFC22ED338C0065E5C4 /* DispathcQueue+Delay.swift */; };
 		BE79FE1922ED338C0065E5C4 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FDFD22ED338C0065E5C4 /* UILabel+Ext.swift */; };
@@ -55,7 +55,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9B9900A90B7C6D2982CDB8D5 /* Pods-SZTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZTools_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZTools_Tests/Pods-SZTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B53E0434EE4D1D075928CBDA /* SZTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SZTools.podspec; path = ../SZTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE79FDF422ED32B50065E5C4 /* itunes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = itunes.html; sourceTree = "<group>"; };
+		BE79FDF422ED32B50065E5C4 /* itunes.pdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image.pdf; path = itunes.pdf; sourceTree = "<group>"; };
 		BE79FDF922ED338C0065E5C4 /* ZStepSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZStepSlider.swift; sourceTree = "<group>"; };
 		BE79FDFC22ED338C0065E5C4 /* DispathcQueue+Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispathcQueue+Delay.swift"; sourceTree = "<group>"; };
 		BE79FDFD22ED338C0065E5C4 /* UILabel+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-				BE79FDF422ED32B50065E5C4 /* itunes.html */,
+				BE79FDF422ED32B50065E5C4 /* itunes.pdf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				BE79FE2E22ED338C0065E5C4 /* .gitkeep in Resources */,
-				BE79FDF522ED32B50065E5C4 /* itunes.html in Resources */,
+				BE79FDF522ED32B50065E5C4 /* itunes.pdf in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

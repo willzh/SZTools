@@ -90,12 +90,17 @@ public class ZSFile: NSObject {
     
     /// 判断是否图片文件
     public func isPhoto() -> Bool {
-        return fileType == .pdf
+        return fileType == .photo
     }
     
     /// 判断是否视频文件
     public func isVideo() -> Bool {
         return fileType == .video
+    }
+    
+    /// 判断是否视频文件
+    public func isAudio() -> Bool {
+        return fileType == .audio
     }
     
     /// 判断是否文档
