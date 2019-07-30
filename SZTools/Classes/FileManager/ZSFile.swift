@@ -123,7 +123,7 @@ public class ZSFile: NSObject {
         }
         
         let attrDict = try? FileManager.default.attributesOfItem(atPath: path!)
-        print("attrDict:%@", attrDict ?? "")
+//        print("attrDict:%@", attrDict ?? "")
         
         if attrDict == nil {
             return

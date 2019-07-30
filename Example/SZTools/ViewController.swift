@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         let file = ZSFile(path!)
         print("file type: \(file.fileType)")
         
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +37,22 @@ class ViewController: UIViewController {
     }
 
     
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        let d1 = df.date(from: "2019-07-30 13:24")
+        let d2 = df.date(from: "2019-07-30 13:30")
+        
+        print("d1: " + d1!.zs_simpleFormatted())
+        print("d2: " + d2!.zs_simpleFormatted())
+        
+        
+        
+    }
     
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return 1
