@@ -48,4 +48,22 @@ public extension CGRect {
     func zs_setSize(_ size: CGSize) -> CGRect {
         return CGRect(origin: origin, size: size)
     }
+    
+}
+
+
+
+public extension CGSize {
+    
+    /// 缩放 size
+    func zs_scale(_ scale: CGFloat) -> CGSize {
+        return CGSize(width: width * scale, height: height * scale)
+    }
+    
+    /// 构造 CGSize，可省略参数名
+    func zs_CGSize(_ width: CGFloat, _ height: CGFloat) -> CGSize {
+        return CGSize(width: width, height: height)
+    }
+    
+    
 }

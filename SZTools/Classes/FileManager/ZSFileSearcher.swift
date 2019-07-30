@@ -59,7 +59,7 @@ public class ZSFileSearcher: NSObject {
                 }else if sortType == .modifyDate {
                     return file1.modifyDate!.compare(file2.modifyDate!) == (ascending ? .orderedAscending : .orderedDescending)
                 }else if sortType == .fileName {
-                    return file1.fileName()!.compare(file2.fileName()!) == (ascending ? .orderedDescending : .orderedAscending)
+                    return file1.fileName().compare(file2.fileName()) == (ascending ? .orderedDescending : .orderedAscending)
                 }else if sortType == .fileSize {
                     return ascending ? file1.fileSize < file2.fileSize : file1.fileSize > file2.fileSize
                 }
@@ -108,7 +108,7 @@ public class ZSFileSearcher: NSObject {
                 }else if sortType == .modifyDate {
                     return file1.modifyDate!.compare(file2.modifyDate!) == (ascending ? .orderedAscending : .orderedDescending)
                 }else if sortType == .fileName {
-                    return file1.fileName()!.compare(file2.fileName()!) == (ascending ? .orderedDescending : .orderedAscending)
+                    return file1.fileName().compare(file2.fileName()) == (ascending ? .orderedDescending : .orderedAscending)
                 }else if sortType == .fileSize {
                     return ascending ? file1.fileSize < file2.fileSize : file1.fileSize > file2.fileSize
                 }

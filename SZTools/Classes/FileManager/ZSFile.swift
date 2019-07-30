@@ -60,24 +60,30 @@ public class ZSFile: NSObject {
     
     //MARK: - Public Methods
     /// 格式化的创建日期
-    public func formatedCreateDate() -> String? {
-        return createDate?.zs_simpleFormatted()
+    public func formatedCreateDate() -> String {
+        guard let date = createDate else {
+            return ""
+        }
+        return date.zs_simpleFormatted()
     }
     
     /// 格式化的更新日期
-    public func formatedModifyDate() -> String? {
-        return modifyDate?.zs_simpleFormatted()
+    public func formatedModifyDate() -> String {
+        guard let date = modifyDate else {
+            return ""
+        }
+        return date.zs_simpleFormatted()
     }
     
     /// 文件的大小描述，ext: 3M, 2G, 20K...
-    public func fileSizeDescription() -> String? {
+    public func fileSizeDescription() -> String {
         return formatFileSize();
     }
     
     /// 返回文件名
-    public func fileName() -> String? {
+    public func fileName() -> String {
         if path == nil  {
-            return nil
+            return ""
         }
         let str = path! as NSString
         return str.lastPathComponent;
