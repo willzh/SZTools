@@ -18,15 +18,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         //table?.registerCellClass(ZSNoDataTableCell.self)
         
-        let path = Bundle.main.path(forResource: "itunes", ofType: "pdf")
-        NSLog("path:%@", path ?? "")
-        let file = ZSFile(path!)
+        print("documents: \(path_documents())")
+        
+        let path = path_documents() + "/itunes.pdf"
+        NSLog("path:%@", path)
+        let file = ZSFile(path)
         print("file type: \(file.fileType)")
         
+        print("new path: \(ZSFileManager.getValidPath(path)!)")
         
         
     }

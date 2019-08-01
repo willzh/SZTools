@@ -65,4 +65,28 @@ public class ZSFileManager: NSObject {
         }
     }
     
+    
+    /// 获取可用的路径，主要用于判断同文件夹下是否有同名文件，有则后面加数字
+    public class func getValidPath(_ srcPath: String) -> String? {
+        
+        let fileMan = FileManager.default
+        if !fileMan.fileExists(atPath: srcPath) {
+            return srcPath
+        }
+        
+        let pstr = srcPath as NSString
+        var i = 1
+        while i < 99 {
+            let ext  = (i == 1) ? " copy" : " copy \(i)"
+            let path = pstr.deletingPathExtension + ext + "." + pstr.pathExtension
+            if !fileMan.fileExists(atPath: path) {
+                return path
+            }
+            i += 1
+        }
+        
+        return nil
+    }
+    
+    
 }
