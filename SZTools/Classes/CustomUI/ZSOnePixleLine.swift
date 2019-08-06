@@ -17,14 +17,14 @@ public class ZSOnePixleLine: UIView {
         }
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         
         self.setUp()
     }
     
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         self.setUp()
