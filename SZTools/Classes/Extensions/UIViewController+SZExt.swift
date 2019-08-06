@@ -117,4 +117,15 @@ public extension UIViewController {
     }
     
     
+    
+    /// present 到一个 ViewController
+    func zs_presentTo(_ vc: UIViewController, animated: Bool = true) {
+        self.present(vc, animated: animated, completion: nil)
+    }
+    
+    /// dismiss
+    func zs_dismiss() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

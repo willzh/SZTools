@@ -38,6 +38,9 @@
 		BE79FE2C22ED338C0065E5C4 /* ZSFilePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE1222ED338C0065E5C4 /* ZSFilePaths.swift */; };
 		BE79FE2D22ED338C0065E5C4 /* ZSFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79FE1322ED338C0065E5C4 /* ZSFileManager.swift */; };
 		BE79FE2E22ED338C0065E5C4 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BE79FE1522ED338C0065E5C4 /* .gitkeep */; };
+		BE7F8A9F22F95EFC00672C4F /* UITableViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F8A9E22F95EFC00672C4F /* UITableViewCell+Ext.swift */; };
+		BE7F8AA122F95F4800672C4F /* UICollectionViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F8AA022F95F4800672C4F /* UICollectionViewCell+Ext.swift */; };
+		BE7F8AA322F9607C00672C4F /* ZSOnePixleLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F8AA222F9607C00672C4F /* ZSOnePixleLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		BE79FE1222ED338C0065E5C4 /* ZSFilePaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSFilePaths.swift; sourceTree = "<group>"; };
 		BE79FE1322ED338C0065E5C4 /* ZSFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSFileManager.swift; sourceTree = "<group>"; };
 		BE79FE1522ED338C0065E5C4 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		BE7F8A9E22F95EFC00672C4F /* UITableViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ext.swift"; sourceTree = "<group>"; };
+		BE7F8AA022F95F4800672C4F /* UICollectionViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Ext.swift"; sourceTree = "<group>"; };
+		BE7F8AA222F9607C00672C4F /* ZSOnePixleLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSOnePixleLine.swift; sourceTree = "<group>"; };
 		CFFED83198A78FF383416D9F /* Pods-SZTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZTools_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZTools_Example/Pods-SZTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E17C5016A70117C214126268 /* Pods_SZTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -194,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				BE79FDF922ED338C0065E5C4 /* ZStepSlider.swift */,
+				BE7F8AA222F9607C00672C4F /* ZSOnePixleLine.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -204,8 +211,10 @@
 				BE79FDFC22ED338C0065E5C4 /* DispathcQueue+Delay.swift */,
 				BE79FDFD22ED338C0065E5C4 /* UILabel+Ext.swift */,
 				BE79FDFE22ED338C0065E5C4 /* UICollectionView+Ext.swift */,
+				BE7F8AA022F95F4800672C4F /* UICollectionViewCell+Ext.swift */,
 				BE79FDFF22ED338C0065E5C4 /* Font+Ext.swift */,
 				BE79FE0022ED338C0065E5C4 /* UITableView+Ext.swift */,
+				BE7F8A9E22F95EFC00672C4F /* UITableViewCell+Ext.swift */,
 				BE79FE0122ED338C0065E5C4 /* UIView+Frame.swift */,
 				BE79FE0222ED338C0065E5C4 /* Device+Ext.swift */,
 				BE79FE0322ED338C0065E5C4 /* UIButton+Ext.swift */,
@@ -351,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE7F8AA322F9607C00672C4F /* ZSOnePixleLine.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				BE79FE1B22ED338C0065E5C4 /* Font+Ext.swift in Sources */,
 				BE79FE1622ED338C0065E5C4 /* ZStepSlider.swift in Sources */,
@@ -368,6 +378,7 @@
 				BE79FE2222ED338C0065E5C4 /* UIView+Layout.swift in Sources */,
 				BE79FE2B22ED338C0065E5C4 /* ZSFile.swift in Sources */,
 				BE79FE2422ED338C0065E5C4 /* UIViewController+SZExt.swift in Sources */,
+				BE7F8A9F22F95EFC00672C4F /* UITableViewCell+Ext.swift in Sources */,
 				BE79FE2C22ED338C0065E5C4 /* ZSFilePaths.swift in Sources */,
 				BE79FE2622ED338C0065E5C4 /* NotificationCenter+Ext.swift in Sources */,
 				BE79FE2922ED338C0065E5C4 /* ZSConstants.swift in Sources */,
@@ -376,6 +387,7 @@
 				BE79FE2D22ED338C0065E5C4 /* ZSFileManager.swift in Sources */,
 				BE79FE2722ED338C0065E5C4 /* NSObject+Ext.swift in Sources */,
 				BE79FE2822ED338C0065E5C4 /* CGRect+Ext.swift in Sources */,
+				BE7F8AA122F95F4800672C4F /* UICollectionViewCell+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,7 @@ public class ZSFile: NSObject {
     public var selected: Bool = false
     
     /// 文件的路径
-    public var path: String? {
+    public var path: String = "" {
         didSet {
             getAttributes()
         }
@@ -82,10 +82,7 @@ public class ZSFile: NSObject {
     
     /// 返回文件名
     public func fileName() -> String {
-        if path == nil  {
-            return ""
-        }
-        let str = path! as NSString
+        let str = path as NSString
         return str.lastPathComponent;
     }
     
@@ -118,11 +115,7 @@ public class ZSFile: NSObject {
     
     //MARK: - Private Methods
     private func getAttributes() {
-        if (path?.isEmpty)! {
-            return
-        }
-        
-        let attrDict = try? FileManager.default.attributesOfItem(atPath: path!)
+        let attrDict = try? FileManager.default.attributesOfItem(atPath: path)
 //        print("attrDict:%@", attrDict ?? "")
         
         if attrDict == nil {
@@ -131,11 +124,11 @@ public class ZSFile: NSObject {
         
         isDir = attrDict![.type] as? FileAttributeType == .typeDirectory
         if isDir {
-            numberOfFiles = numberOfFiles(path!, traverse: false)
+            numberOfFiles = numberOfFiles(path, traverse: false)
             fileType = .folder
         }else {
             // 文件类型
-            let str = path! as NSString
+            let str = path as NSString
             let ext = str.pathExtension.lowercased()
             
             if ext == "pdf" {
@@ -164,10 +157,7 @@ public class ZSFile: NSObject {
     
     /// 检查文件后缀
     private func checkSuffix(_ exts: [String]) -> Bool {
-        if path == nil  {
-            return false
-        }
-        let str = path! as NSString
+        let str = path as NSString
         return exts.contains(str.pathExtension.lowercased())
     }
     

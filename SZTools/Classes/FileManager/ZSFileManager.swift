@@ -41,9 +41,7 @@ public class ZSFileManager: NSObject {
         
         let fileMan = FileManager.default
         for m in models {
-            guard let path = m.path else {
-                continue
-            }
+            let path = m.path
             if fileMan.fileExists(atPath: path) {
                 try? fileMan.removeItem(atPath: path)
             }
@@ -52,9 +50,7 @@ public class ZSFileManager: NSObject {
     
     /// 重命名文件
     public class func rename(file: ZSFile, newName: String) {
-        guard let path = file.path else {
-            return
-        }
+        let path = file.path
         let fileMan = FileManager.default
         let pathStr = path as NSString
         
