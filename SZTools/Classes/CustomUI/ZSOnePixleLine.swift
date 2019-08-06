@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZSOnePixleLine: UIView {
+public class ZSOnePixleLine: UIView {
 
     /// 是否垂直的线条
     @IBInspectable var vertical: Bool = false {

@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 
-extension UITableViewCell {
+public extension UITableViewCell {
     
     /// 配置数据
     func zs_config(_ model: Any) {

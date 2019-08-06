@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-extension UICollectionViewCell {
+public extension UICollectionViewCell {
     
     /// 配置数据
     func zs_config(_ model: Any) {
