@@ -23,13 +23,18 @@ class ViewController: UIViewController {
         
         print("documents: \(path_documents())")
         
-        let path = path_documents() + "/itunes.pdf"
+        let path = path_documents()
         NSLog("path:%@", path)
         let file = ZSFile(path)
         print("file type: \(file.fileType)")
         
         print("new path: \(ZSFileManager.getValidPath(path)!)")
         
+        print("document is folder: \(ZSFileManager.isDir(path_documents()))")
+        print("document is folder: \(ZSFileManager.isDir(path))")
+        
+        print("document number folders: \(file.numberOfFolders)")
+        print("document number folders: \(file.numberOfFiles)")
         
     }
 

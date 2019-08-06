@@ -38,6 +38,8 @@ public class ZSFile: NSObject {
     public var isDir: Bool = false
     /// 文件夹中的文件数量
     public var numberOfFiles: Int = 0
+    /// 文件夹中的子文件夹数量
+    public var numberOfFolders: Int = 0
     /// 创建日期
     public var createDate: Date?
     /// 更新日期
@@ -115,16 +117,11 @@ public class ZSFile: NSObject {
     
     //MARK: - Private Methods
     private func getAttributes() {
-        let attrDict = try? FileManager.default.attributesOfItem(atPath: path)
-//        print("attrDict:%@", attrDict ?? "")
         
-        if attrDict == nil {
-            return
-        }
-        
-        isDir = attrDict![.type] as? FileAttributeType == .typeDirectory
+        isDir = ZSFileManager.isDir(path)
         if isDir {
-            numberOfFiles = numberOfFiles(path, traverse: false)
+            numberOfFiles = numberOfFiles(path)
+            numberOfFolders = numberOfFolders(path)
             fileType = .folder
         }else {
             // 文件类型
@@ -148,6 +145,11 @@ public class ZSFile: NSObject {
             }
         }
         
+        let attrDict = try? FileManager.default.attributesOfItem(atPath: path)
+        if attrDict == nil {
+            return
+        }
+        //print("attrDict:%@", attrDict!)
         createDate = attrDict![.creationDate] as? Date
         modifyDate = attrDict![.modificationDate] as? Date
         
@@ -186,14 +188,17 @@ public class ZSFile: NSObject {
     }
     
     /// 获取文件夹中文件数量
-    private func numberOfFiles(_ inDir: String, traverse: Bool) -> Int {
+    private func numberOfFiles(_ inDir: String, traverse: Bool = false) -> Int {
         let fileMan = FileManager.default
         
-        var isDirectory: ObjCBool = false
-        if fileMan.fileExists(atPath: inDir, isDirectory: &isDirectory)
+        if !fileMan.fileExists(atPath: inDir)
         {
-            print("获取文件夹中文件数量错误，文件不存在或路径非文件夹")
+            print("获取文件夹中文件数量错误，文件不存在")
             return 0
+        }
+        if !ZSFileManager.isDir(inDir) {
+            print("获取文件夹中文件数量错误，路径非文件夹")
+            return 1
         }
         
         let contents = try? fileMan.contentsOfDirectory(atPath: inDir)
@@ -206,15 +211,48 @@ public class ZSFile: NSObject {
         }
         
         var count = 0
-        for path in contents!
-        {
+        for path in contents! {
             let subPath = inDir.appendingFormat("/%@", path)
-            var isDirectory: ObjCBool = true
-            if fileMan.fileExists(atPath: inDir, isDirectory: &isDirectory) {
-                count += numberOfFiles(subPath, traverse: traverse)
-            }else {
-                count += 1
+            count += numberOfFiles(subPath, traverse: traverse)
+        }
+        return count
+    }
+    
+    
+    /// 获取文件夹中子文件夹数量
+    private func numberOfFolders(_ inDir: String, traverse: Bool = false) -> Int {
+        let fileMan = FileManager.default
+        
+        if !fileMan.fileExists(atPath: inDir)
+        {
+            print("获取子文件夹数量错误，文件不存在")
+            return 0
+        }
+        if !ZSFileManager.isDir(inDir) {
+            print("获取子文件夹数量错误，路径非文件夹")
+            return 0
+        }
+        
+        let contents = try? fileMan.contentsOfDirectory(atPath: inDir)
+        if contents == nil {
+            return 0
+        }
+        
+        if !traverse {
+            var count = 0
+            for p in contents! {
+                let subPath = inDir.appendingFormat("/%@", p)
+                if ZSFileManager.isDir(subPath) {
+                    count += 1
+                }
             }
+            return count
+        }
+        
+        var count = 0
+        for p in contents! {
+            let subPath = inDir.appendingFormat("/%@", p)
+            count += numberOfFiles(subPath, traverse: traverse)
         }
         return count
     }
@@ -247,3 +285,6 @@ public class ZSFile: NSObject {
     
     
 }
+
+
+
