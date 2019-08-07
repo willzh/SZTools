@@ -77,16 +77,19 @@ public extension UIViewController {
     }
     
     /// 导航 pop 到上一个 ViewController
+    @discardableResult
     func zs_pop(_ animated: Bool = true) -> UIViewController? {
         return self.navigationController?.popViewController(animated: animated)
     }
     
     /// 导航 pop 到根 ViewController
+    @discardableResult
     func zs_popToRoot(_ animated: Bool = true) -> [UIViewController]? {
         return self.navigationController?.popToRootViewController(animated: animated)
     }
     
     /// 导航 pop 到指定的 vc
+    @discardableResult
     func zs_popTo(_ vc: UIViewController, animated: Bool = true) -> [UIViewController]? {
         return self.navigationController?.popToViewController(vc, animated: animated)
     }
