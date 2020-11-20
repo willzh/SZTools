@@ -51,7 +51,7 @@ public extension UIColor {
     class func zs_colorWithLight(_ normal: Int, dark: Int) -> UIColor {
         if #available(iOS 13.0, *) {
             return UIColor.init(dynamicProvider: { (t) -> UIColor in
-                return t.userInterfaceStyle == .dark ? zs_hexColor(dark) : zs_hexColor(normal)
+                return t.userInterfaceStyle == .dark ? zs_hex(dark) : zs_hex(normal)
             })
         }
         return zs_hex(normal)
