@@ -23,7 +23,7 @@ public extension UIColor {
     
     
     /// 以 16 进制方式创建 UIColor，全局方法
-    class func zs_hexColor(_ hex: Int, _ alpha: CGFloat = 1.0) -> UIColor {
+    class func zs_hex(_ hex: Int, _ alpha: CGFloat = 1.0) -> UIColor {
         return UIColor(red: (hex >> 16) & 0xFF, green: (hex >> 8) & 0xFF, blue: hex & 0xFF).withAlphaComponent(alpha)
     }
     
@@ -46,6 +46,17 @@ public extension UIColor {
         }
         return hex!
     }
+    
+    /// 十六进制方式。适配深色模式。在 iOS 13 以下，使用 normal 色值
+    class func zs_colorWithLight(_ normal: Int, dark: Int) -> UIColor {
+        if #available(iOS 13.0, *) {
+            return UIColor.init(dynamicProvider: { (t) -> UIColor in
+                return t.userInterfaceStyle == .dark ? zs_hexColor(dark) : zs_hexColor(normal)
+            })
+        }
+        return zs_hex(normal)
+    }
+    
     
 }
 
