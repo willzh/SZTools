@@ -25,12 +25,15 @@ public extension String {
     
     /// 截取字符串
     func zs_subString(withRange range: NSRange?) -> String? {
-        if range == nil {
+        guard let r = range else {
             return nil
         }
-        let index3 = index(self.startIndex, offsetBy: range!.location)
-        let index4 = index(self.startIndex, offsetBy: range!.location + range!.length)
-        let sub = self[index3..<index4]
+        
+        let start = String.Index(encodedOffset: 0)
+        
+        let f = index(start, offsetBy: r.location)
+        let e = index(start, offsetBy: r.location + r.length)
+        let sub = self[f..<e]
         
         return String(sub)
     }

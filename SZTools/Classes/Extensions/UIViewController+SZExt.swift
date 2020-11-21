@@ -63,11 +63,11 @@ public extension UIViewController {
     }
     
     /// 初始化。若 sbname 有值，从 storyboard 加载。若没有值，调用 init 方法
-    class func zs_instance(_ sbname: String?) -> UIViewController {
-        if sbname == nil {
+    class func zs_instance(_ sbname: String = "") -> UIViewController {
+        if sbname == "" {
             return self.init()
         }
-        return zs_loadFromSB(sbname!)
+        return zs_loadFromSB(sbname)
     }
     
 }
