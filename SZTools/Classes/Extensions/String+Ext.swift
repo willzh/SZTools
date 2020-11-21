@@ -29,7 +29,7 @@ public extension String {
             return nil
         }
         
-        let start = String.Index(encodedOffset: 0)
+        let start = String.Index(utf16Offset: 0, in: self)
         
         let f = index(start, offsetBy: r.location)
         let e = index(start, offsetBy: r.location + r.length)
