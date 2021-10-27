@@ -291,7 +291,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = EAMG4CQF26;
+						DevelopmentTeam = 6AUX699Z3L;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -517,9 +517,9 @@
 			baseConfigurationReference = CFFED83198A78FF383416D9F /* Pods-SZTools_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EAMG4CQF26;
+				DEVELOPMENT_TEAM = 6AUX699Z3L;
 				INFOPLIST_FILE = SZTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
@@ -538,9 +538,9 @@
 			baseConfigurationReference = 0C3D734A02CF6E56FEF2FE31 /* Pods-SZTools_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EAMG4CQF26;
+				DEVELOPMENT_TEAM = 6AUX699Z3L;
 				INFOPLIST_FILE = SZTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (

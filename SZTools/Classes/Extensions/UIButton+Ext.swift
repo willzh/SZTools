@@ -15,8 +15,13 @@ public extension UIButton {
         let btn = UIButton.init(type: type)
         btn.frame = frame
         btn.setTitle(title, for: UIControl.State.normal)
-        btn.setImage(image, for: UIControl.State.normal)
-        btn.addTarget(target, action: action!, for: forEvents)
+        if (image != nil) {
+            btn.setImage(image, for: UIControl.State.normal)
+        }
+        
+        if target != nil && action != nil {
+            btn.addTarget(target!, action: action!, for: forEvents)
+        }
         
         return btn
     }

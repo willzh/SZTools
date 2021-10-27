@@ -27,12 +27,19 @@ public extension UIDevice {
         return zs_screenSize().height
     }
     
+    /// 获取 window
+    private class func getWindow() -> UIWindow {
+        var window = UIApplication.shared.keyWindow
+        if window == nil {
+            window = UIWindow(frame: UIScreen.main.bounds)
+        }
+        return window!
+    }
     
-    
-    /// 是否 X 系列手机
-    class func zs_isiPhoneX () -> Bool {
-        let h = zs_screenHeight()
-        return h == 812.0 || h == 896.0
+    /// 是否有安全区域
+    class func zs_haveSafeArea () -> Bool {
+        let window = getWindow()
+        return window.safeAreaInsets.bottom != 0 || window.safeAreaInsets.top != 0
     }
     
     /// 判断是否是ipad
@@ -49,24 +56,24 @@ public extension UIDevice {
     }
     
     
-    /// 状态栏和导航条总共高度. x 系列手机等于 88，其他等于 64
+    /// 状态栏和导航条总共高度.
     class func zs_statusAndNavBarHeight () -> CGFloat {
-        return zs_isiPhoneX() ? 88 : 64
+        return zs_safeAreaTop() + 64
     }
     
-    /// 状态栏高度。 x 系列手机等于 44，其他等于 20
+    /// 状态栏高度。
     class func zs_statusBarHeight () -> CGFloat {
-        return zs_isiPhoneX() ? 44 : 20
+        return zs_safeAreaTop() + 20
     }
     
-    /// 顶部安全区域高度。 x 系列手机等于 24，其他等于 0
+    /// 顶部安全区域高度。
     class func zs_safeAreaTop () -> CGFloat {
-        return zs_isiPhoneX() ? 24 : 0
+        return getWindow().safeAreaInsets.top
     }
     
     /// 底部安全区域高度. x 系列手机等于 34，其他等于 0
     class func zs_safeAreaBottom () -> CGFloat {
-        return zs_isiPhoneX() ? 34 : 0
+        return getWindow().safeAreaInsets.bottom
     }
     
     
